@@ -35,6 +35,15 @@ Curso introdutório a Criptomoedas e outras aplicações da tecnologia da Blockc
 
 - Solidity Docs [[link]](http://solidity.readthedocs.io/en/latest/)
 
+### Byzantine Fault Tolerant Protocols
+
+- [Lamport, L et al. The Byzantine Generals Problem](https://www.microsoft.com/en-us/research/publication/byzantine-generals-problem/)
+
+- [Lamport, L et al. The Part-Time Parliament](http://lamport.azurewebsites.net/pubs/lamport-paxos.pdf)
+
+- Raft [[page](https://raft.github.io/)] [[paper](https://raft.github.io/raft.pdf)]
+
+
 ### others
 
 - Bitcoin and Cryptocurrency Technologies (textbook) [[preprint](https://d28rh4a8wq0iu5.cloudfront.net/bitcointech/readings/princeton_bitcoin_book.pdf?a=1)] [[amazon](https://www.amazon.com/gp/product/0691171696/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0691171696&linkCode=as2&tag=jbonneau-20&linkId=59f35df2a92dd877cd22363bd8373a35)]
@@ -45,7 +54,7 @@ Curso introdutório a Criptomoedas e outras aplicações da tecnologia da Blockc
 
 - permaCoin whitepaper [[link]](https://www.cs.umd.edu/~elaine/docs/permacoin.pdf)
 
-- [Kosba, A. Hawk: The Blockchain Model of Cryptography and Privacy-Preserving Smart Contracts](https://eprint.iacr.org/2015/675.pdf)
+- [Kosba, A et al. Hawk: The Blockchain Model of Cryptography and Privacy-Preserving Smart Contracts](https://eprint.iacr.org/2015/675.pdf)
 
 ### Proofs
 
@@ -65,9 +74,9 @@ Curso introdutório a Criptomoedas e outras aplicações da tecnologia da Blockc
 
 #### Proofs of Retrievability
 
-- [Juels, A. PORs: Proofs of Retrievability for Large Files](http://www.arijuels.com/wp-content/uploads/2013/09/JK07.pdf)
+- [Juels, A et al. PORs: Proofs of Retrievability for Large Files](http://www.arijuels.com/wp-content/uploads/2013/09/JK07.pdf)
 
-- [Bowers, K. Proofs of Retrievability: Theory and Implementation](http://dl.acm.org/citation.cfm?id=1655015)
+- [Bowers, K et al. Proofs of Retrievability: Theory and Implementation](http://dl.acm.org/citation.cfm?id=1655015)
 
 #### Proof of Burn
 
