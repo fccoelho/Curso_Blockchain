@@ -57,6 +57,9 @@ que iniciar o geth na nossa chain privada:
 $ geth --ipcpath Downloads/dev_eth_chain/geth.ipc --datadir 
 Downloads/dev_eth_chain/ --rpc --rpccorsdomain "http://localhost:3000" --dev 
 console
+```
+
+e iniciar o aplicativo:
 
 ```bash
 $ meteor
