@@ -50,7 +50,13 @@ if(typeof web3 === 'undefined')
     web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:8545'));
 ```
 
-Agora podemos já executar nosso aplicativo pela primeira vez:
+Agora podemos já executar nosso aplicativo pela primeira vez, mas antes temos 
+que iniciar o geth na nossa chain privada:
+
+```bash
+$ geth --ipcpath Downloads/dev_eth_chain/geth.ipc --datadir 
+Downloads/dev_eth_chain/ --rpc --rpccorsdomain "http://localhost:3000" --dev 
+console
 
 ```bash
 $ meteor
