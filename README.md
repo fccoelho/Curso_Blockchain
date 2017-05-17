@@ -1,4 +1,6 @@
-# Curso_Blockchain
+# Introdução às Criptomoedas e aplicações na bolckchain
+
+Flávio Codeço Coelho e Bruno Cuconato
 
 Curso introdutório a Criptomoedas e outras aplicações da tecnologia da Blockchain. Disciplina eletiva do Mestrado em modelagem matemática da FGV.
 
@@ -10,7 +12,7 @@ Nakamoto](https://en.wikipedia.org/wiki/Satoshi_Nakamoto):
 https://bitcoin.org/bitcoin.pdf
 3. Criptomoedas: o que são e como são usadas
 3. Sessão prática interagindo com a tecnologia da Bitcoin usando Python
-4. "Proof of Work" Da bitcoin. Do conceito à pratica.
+4. "Proof of Work" da bitcoin. Do conceito à pratica.
 5. Curvas Elípticas e sua aplicação na Bitcoin.
     - RSA como modelo de public key cryptography
 6. Alt coins
@@ -19,7 +21,7 @@ https://bitcoin.org/bitcoin.pdf
 9. Ethereum: White e Yellow paper
 10. Desenvolvendo Aplicações na plataforma Ethereum
 
-## bibliography
+## Bibliografia
 
 ### Bitcoin
 
@@ -47,7 +49,7 @@ https://bitcoin.org/bitcoin.pdf
 - Raft [[page](https://raft.github.io/)] [[paper](https://raft.github.io/raft.pdf)]
 
 
-### others
+### Outros
 
 - Bitcoin and Cryptocurrency Technologies (textbook) [[preprint](https://d28rh4a8wq0iu5.cloudfront.net/bitcointech/readings/princeton_bitcoin_book.pdf?a=1)] [[amazon](https://www.amazon.com/gp/product/0691171696/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0691171696&linkCode=as2&tag=jbonneau-20&linkId=59f35df2a92dd877cd22363bd8373a35)]
 
@@ -59,7 +61,7 @@ https://bitcoin.org/bitcoin.pdf
 
 - [Kosba, A et al. Hawk: The Blockchain Model of Cryptography and Privacy-Preserving Smart Contracts](https://eprint.iacr.org/2015/675.pdf)
 
-### Proofs
+### Provas
 
 #### Proofs of work
 
