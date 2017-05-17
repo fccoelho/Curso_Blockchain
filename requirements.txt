@@ -1,4 +1,4 @@
 pycoin
 sympy
 coincurve
-pybitcointools
+bitcoin

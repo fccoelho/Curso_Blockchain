@@ -5,7 +5,10 @@ Curso introdutório a Criptomoedas e outras aplicações da tecnologia da Blockc
 ## Programa
 
 1. Introdução ao Bitcoin e sua história
-2. O artigo histórico de [Satoshi Nakamoto](https://en.wikipedia.org/wiki/Satoshi_Nakamoto): https://bitcoin.org/bitcoin.pdf
+2. O artigo histórico de [Satoshi 
+Nakamoto](https://en.wikipedia.org/wiki/Satoshi_Nakamoto): 
+https://bitcoin.org/bitcoin.pdf
+3. Criptomoedas: o que são e como são usadas
 3. Sessão prática interagindo com a tecnologia da Bitcoin usando Python
 4. "Proof of Work" Da bitcoin. Do conceito à pratica.
 5. Curvas Elípticas e sua aplicação na Bitcoin.
