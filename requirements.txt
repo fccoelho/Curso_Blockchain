@@ -2,3 +2,4 @@ pycoin
 sympy
 coincurve
 bitcoin
+pycryptodome
