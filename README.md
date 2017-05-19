@@ -1,4 +1,4 @@
-# Introdução às Criptomoedas e aplicações na bolckchain
+# Introdução às Criptomoedas e aplicações na Blockchain
 
 Flávio Codeço Coelho e Bruno Cuconato
 
