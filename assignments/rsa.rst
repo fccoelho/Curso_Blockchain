@@ -1,6 +1,10 @@
 building an RSA implementation
 ##############################
 
+**note:** you should never use your own implementation of a cryptographic scheme 
+in your code, unless you are a specialist in that algorithm. use a standard 
+library instead.
+
 the RSA scheme is probably the easiest to understand public key cryptography 
 protocol. we ask you to implement it almost completely. check these references 
 for guidance: `1 <http://doctrina.org/How-RSA-Works-With-Examples.html>`__
