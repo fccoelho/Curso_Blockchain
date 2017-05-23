@@ -25,6 +25,8 @@ ecmascript@0.7.3
 ecmascript-runtime@0.3.15
 ejson@1.0.13
 es5-shim@4.6.15
+ethereum:accounts@0.4.0
+ethereum:blocks@0.3.2
 ethereum:dapp-styles@0.5.8
 ethereum:tools@0.6.0
 ethereum:web3@0.15.3

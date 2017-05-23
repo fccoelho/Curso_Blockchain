@@ -1,17 +1,30 @@
 <head>
-  <title>presencaDapp</title>
+  <title>Lista de Presença Dapp</title>
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
+  <h1>Introdução as criptomoedas e aplicações na Blockchain</h1>
 
-  {{> hello}}
+  {{> presenca}}
+  <h2>Alunos Matriculados</h2>
+  {{> matricula}}
   {{> info}}
+
 </body>
 
-<template name="hello">
-  <button>Click Me</button>
+<template name="presenca">
+  <button>Assine a presença</button>
   <p>You've pressed the button {{counter}} times.</p>
+    {{currentBlock}}
+</template>
+
+<template name="matricula">
+    <form>
+        <label>Nome: </label><input><br>
+        <label>endereço:</label><input><br>
+        <button>Matricular</button>
+    </form>
+
 </template>
 
 <template name="info">
