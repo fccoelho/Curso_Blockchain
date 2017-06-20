@@ -25,11 +25,11 @@ interfaces. we'll be using only the first and last programs.
         OSX: $HOME/Library/Application Support/Bitcoin/
                 
         Linux: $HOME/.bitcoin/
+	
+you may have to create the directory first (`mkdir $HOME/.bitcoin/`).
 
 with the following content ([see the template bitcoin.conf file if you like](https://github.com/bitcoin/bitcoin/blob/master/contrib/debian/examples/bitcoin.conf)):
 
-> mkdir $HOME/.bitcoin/
->
 > rpcuser=PICK_USER
 >
 > rpcpassword=PICK_YOUR_PASSWORD
