@@ -1,15 +1,21 @@
 # Introdução às Criptomoedas e aplicações na Blockchain
 
+> **Auditório 317, quintas-feiras às 14h.**
+
 Flávio Codeço Coelho e Bruno Cuconato
 
 Curso introdutório a Criptomoedas e outras aplicações da tecnologia da Blockchain. Disciplina eletiva do Mestrado em modelagem matemática da FGV.
 
+## Avisos
+
+| data       | conteúdo |
+| ---------- | -------- |
+| 2017-06-22 | leitura prévia do *white paper* para a aula (ver bibliografia) |
+
 ## Programa
 
 1. Introdução ao Bitcoin e sua história
-2. O artigo histórico de [Satoshi 
-Nakamoto](https://en.wikipedia.org/wiki/Satoshi_Nakamoto): 
-https://bitcoin.org/bitcoin.pdf
+2. Usando o cliente bitcoin
 3. Criptomoedas: o que são e como são usadas
 3. Sessão prática interagindo com a tecnologia da Bitcoin usando Python
 4. "Proof of Work" da bitcoin. Do conceito à pratica.
@@ -25,7 +31,7 @@ https://bitcoin.org/bitcoin.pdf
 
 ### Bitcoin
 
-- white paper [[pdf]](bitcoin.org/bitcoin.pdf) [[HTML annotated]](https://genius.com/2683722) [[other formats]](https://github.com/karask/satoshi-paper)
+- white paper [[pdf]](bitcoin.org/bitcoin.pdf) [[errata]](https://gist.github.com/harding/dabea3d83c695e6b937bf090eddf2bb3) [[HTML annotated]](https://genius.com/2683722) [[other formats]](https://github.com/karask/satoshi-paper)
 
 - Mastering Bitcoin, Andreas Antonopoulos [[link]](http://chimera.labs.oreilly.com/books/1234000001802/index.html)
 
