@@ -1,7 +1,7 @@
  
 # Criando um Frontend para o seu contrato
 
-Depois de publicado o nosso contrato é apenas um programa na blockchain com uma  
+Depois de publicado, o nosso contrato é apenas um programa na blockchain com uma  
 API, para facilitar a interação do publico-alvo com o contrato.
 
 Para este fim vamos construir um web app muito simples usando a framework
@@ -65,4 +65,4 @@ e iniciar o aplicativo:
 $ meteor
 ```
 
-Agora é só abrir o browser em localhost:3000.
+Agora é só abrir o browser em [localhost:3000](http://localhost:3000).
