@@ -28,5 +28,7 @@ if you have questions, feel free to ask me (@odanoburu).
 	(`4000` is an arbitrary port number that is bind to the 18444 port
     in the container, which is the port the bitcoin core client uses
     in `regtest` mode).
+	
+	to exit the terminal **and** the container, just type `exit`.
 
 5. go back to step 3 in the `bitcoin-testnet.md` tutorial!
