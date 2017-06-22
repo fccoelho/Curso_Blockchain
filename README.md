@@ -4,7 +4,7 @@
 
 Flávio Codeço Coelho e Bruno Cuconato
 
-Curso introdutório a Criptomoedas e outras aplicações da tecnologia da Blockchain. Disciplina eletiva do Mestrado em modelagem matemática da FGV.
+Curso introdutório a Criptomoedas e outras aplicações da tecnologia da Blockchain. Disciplina eletiva do Mestrado em modelagem matemática da FGV. Uma série de vídeo-aulas seguindo o programa do curso está disponível no [Youtube](https://www.youtube.com/watch?v=xqjow06qUEw).
 
 ## Avisos
 
