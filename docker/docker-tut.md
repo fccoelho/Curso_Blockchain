@@ -6,7 +6,8 @@ container already set up -- although you will still need to download
 docker. you can read more about docker
 containers [here](https://www.docker.com/what-container).
 
-if you have questions, feel free to ask me (@odanoburu).
+if you have questions, feel free to ask me (@odanoburu). please tell
+me about any mistakes or possibilities of improvement!
 
 1. get the docker community editon from
    the [docker website](https://docs.docker.com/engine/installation/).
