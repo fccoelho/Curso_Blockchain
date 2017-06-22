@@ -8,6 +8,8 @@ Curso introdutório a Criptomoedas e outras aplicações da tecnologia da Blockc
 
 ## Avisos
 
+quadro online da classe: [[link]](https://hackmd.io/EYUwhgrATAbFIFooAYCcyEBYAmaFlTiWFRGwgDMQKBmAdkyA?both)
+
 | data       | conteúdo |
 | ---------- | -------- |
 | 2017-06-22 | leitura prévia do *white paper* para a aula (ver bibliografia) |
@@ -36,6 +38,8 @@ Curso introdutório a Criptomoedas e outras aplicações da tecnologia da Blockc
 - Mastering Bitcoin, Andreas Antonopoulos [[link]](http://chimera.labs.oreilly.com/books/1234000001802/index.html)
 
 - developer documentation [[guide]](https://bitcoin.org/en/developer-guide) [[reference]](https://bitcoin.org/en/developer-reference) [[link]](https://bitcoin.org/en/developer-documentation)
+
+- bitcoin para programadores [[pdf]](https://www.gitbook.com/download/pdf/book/itsriodejaneiro/bitcoin-para-programadores) [[repo]](https://github.com/BlockchainHub/bitcoin-para-programadores)
 
 
 ### Ethereum

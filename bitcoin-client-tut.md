@@ -15,7 +15,8 @@ easier, but you'll have to
 install [docker](https://www.docker.com/what-container) instead). if
 you do, go to step 3 directly.
 
-if you have questions, feel free to ask me (@odanoburu).
+if you have questions, feel free to ask me (@odanoburu). please tell
+me about any mistakes or possibilities of improvement!
    
 1. download the bitcoin core client:
    [[binaries]](https://bitcoin.org/en/download "bitcoin core download
@@ -62,12 +63,16 @@ is 4000.**
 
 	try running `bitcoin-cli getblockchaininfo`. you should see your stats
 	related to the regtest blockchain.
+	
+	now try running `bitcoin-cli getpeerinfo`. see how many nodes you
+    are connected to.
 
-	**to stop the bitcoin client from running, type `bitcoin-cli`.**
+	**to stop the bitcoin client from running, type `bitcoin-cli stop`.**
 
-	now run `bitcoin-cli help`. this summarizes some of the RPC commands
-	available. a more complete reference is available at
-	[[2]](https://bitcoin.org/en/developer-reference).
+	now run `bitcoin-cli help`. this summarizes some of the RPC
+	commands available. a more complete reference is available at
+	[[2]](https://bitcoin.org/en/developer-reference). `bitcoin-cli
+	help [CMD]` will give you specific info about a certain command;
 
 	note that the regtest blockchain offers some additional RPCs, such as
 	`bitcoin-cli generate [nblocks]`, which creates nblocks out of thin
@@ -76,8 +81,8 @@ is 4000.**
 	you can mess up the network's consensus by creating too many blocks
 	too fast.**
 
-4. run `bitcoin-cli getnewaddress`. publish it to the course's page
-   (to be provided).
+4. run `bitcoin-cli getnewaddress`. publish it to the course's online
+   blackboard (check the README).
 
 5. check if your blockchain is synced by comparing the number of
    blocks between your peers. run `bitcoin-cli getblockcount`.

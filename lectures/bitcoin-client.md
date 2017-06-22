@@ -3,11 +3,28 @@
 after setting up our environment following the `bitcoin-client-tut.md`
 tutorial, we can now explore the `bitcoin-cli` utility.
 
+**obs: in this tutorial we are only using the bitcoin client in
+`regtest` mode.**
+
+if you have questions, feel free to ask me (@odanoburu). please tell
+me about any mistakes or possibilities of improvement!
+
 [[RPC commands
 reference]](https://bitcoin.org/en/developer-reference#rpc-quick-reference)
 
-from now on, we assume you have the `bitcoind` daemon running (`bitcoind
--regtest -daemon`).
+from now on, we assume you have the `bitcoind` daemon running
+(`bitcoind -regtest -daemon`). for help with commands, check the
+reference above or run `bitcoin-cli help` for a list of commands or
+`bitcoin-cli help [CMD]` for help with a certain command. if you don't
+have any bitcoin yet, ask someone for some. if you're doing this
+tutorial on your own, just run `bitcoin-cli generate
+[number-of-blocks]` to mine some blocks and get their rewards. be
+aware that you can only spend coinbase transactions after 100
+confirmations, so you should run the command with at 101 as a
+parameter.
+
+**obs: if you'll be using the bitcoin client for real in future, don't
+forget to encrypt your wallet and set a strong rpc password.**
 
 ## creating a transaction 
 
@@ -55,7 +72,7 @@ if it is in the mempool.
 	bitcoin-cli gettransaction [txid]
 
 will describe a transaction which was made by an address in our
-wallet. **you should compare this output to**
+wallet. **you should compare this output to**:
 
 	bitcoin-cli getrawtransaction [txid] 1
 
@@ -74,13 +91,7 @@ decoded version.
 
 [ref](https://bitcoin.org/en/developer-reference#createrawtransaction)
 
-	bitcoin-cli createrawtransaction '''
-	[
-		{
-			"txid": "[txid]",
-		"vout" : [tx-index]
-			}
-	]''' '{ "[address]": [value]}'
+	bitcoin-cli createrawtransaction '[{"txid":	"[input transaction txid]",	"vout": [index of output to be used]}]'	'{"[address-to-send]":	[amount]}'
 
 although this can be more troublesome to write, it is more
 powerful. running `bitcoin-cli sendtoaddress "[address]" [value]` will
@@ -90,10 +101,14 @@ transaction this amount will come from.
 using the `createrawtransaction` RPC, you can not only decide from
 which UTXOs the money being sent will come from, but you can also send
 it to several different addresses. go ahead, try it building such a
-transaction.
+transaction. (you should run `bitcoin-cli listunspent` to see which
+unspent transaction outputs (UTXOs) you have).
 
-**obs: the output will hex-encoded, so you'll need to run `bitcoin-cli
-decoderawtransaction [hex-encoded-tx]` to see it in human readable terms.**
+**obs: the output will
+be
+[serialized](https://bitcoin.org/en/developer-reference#raw-transaction-format),
+so you'll need to run `bitcoin-cli decoderawtransaction
+[hex-encoded-tx]` to see it in human readable terms.**
 
 but remember this is the not-so-easy way. after runnning the
 `createrawtransaction` RPC, you may have noticed that there are a few
@@ -102,11 +117,36 @@ missing values, compared to the output we got from
 
 now try sending this transaction using the `sendrawtransaction` RPC:
 
-	bitcoin-cli sendrawtransaction [hex-encoded-tx]
+	bitcoin-cli sendrawtransaction [serialized-tx]
 	
 you may have got the following error: `error message:256:
-absurdly-high-fee`. **can you guess why?**
+absurdly-high-fee`. **can you guess why this happened?**
 
-if you don't [[must set change address, else you'll pay the diff txin - txout as fees. go change the createrawtransaction!]]
+if you don't set a change transaction, the `createrawtransaction` RPC
+won't do it for you. as the fees paid to miners are equal to the sum
+of the transaction inputs minus the sum of its inputs, this means that
+you'll be spending more bitcoins than you probably wanted to spend.
 
-we must sign its output. [[bitcoin-cli signrawtransaction, then sendrawtransaction]]
+to solve this, rerun the `create raw transaction` RPC, adding another
+send-to-address field, this time sending the change you want to an
+address under your control (just calculate the fee you want to send
+using `sum-of-output-txs + tx-fees = sum-of-input-txs`).
+
+try sending the transaction again, using the previous highlighted
+command. what happens?
+
+the process is not complete yet. we must sign the raw transaction
+before sending it, else how can the network accept it as valid?
+
+	bitcoin-cli signrawtransaction [serialized-tx]
+	
+using the serialized transaction returned by this command, we can run
+the `decoderawtransaction` RPC, check the result, and then publish it
+with:
+
+	bitcoin-cli sendrawtransaction [serialized-tx]
+
+of course, if all the customization you want in a transaction is to
+sent different amounts to several addresses in the same transaction,
+you can do so with the simpler `sendmany` RPC. (check the reference
+for details).
