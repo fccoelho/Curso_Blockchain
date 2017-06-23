@@ -20,7 +20,8 @@ me about any mistakes or possibilities of improvement!
    
 1. download the bitcoin core client:
    [[binaries]](https://bitcoin.org/en/download "bitcoin core download
-   page") [[source]](https://github.com/bitcoin/bitcoin)
+   page") [[instructions]](https://bitcoin.org/en/full-node#linux-instructions) 
+   [[source]](https://github.com/bitcoin/bitcoin)
 
 	if you are using ubuntu, you can also install from a PPA (this is
    not recommended if you are going to use the real Bitcoin network):
