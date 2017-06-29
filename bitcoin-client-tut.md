@@ -44,8 +44,8 @@ me about any mistakes or possibilities of improvement!
 	the content should be the following
 ([see a template bitcoin.conf file if you like](https://github.com/bitcoin/bitcoin/blob/master/contrib/debian/examples/bitcoin.conf)):
 
-		rpcuser=PICK_USER
-		rpcpassword=PICK_YOUR_PASSWORD
+		rpcuser=[PICK_USER]
+		rpcpassword=[PICK_YOUR_PASSWORD]
 		regtest=1
 
 	the `regtest` variable prevents us from having to specify the flag
@@ -57,30 +57,32 @@ need to add a peer. ask for someone's IP, and run `bitcoind -regtest
 address and bitcoin client port. the default port for `regtest` mode
 is 18444, if the person has changed that you should change it
 too. **obs: everyone using docker is using a different port, default
-is 4000.**
+is 4000.** note that the node you added might have to add you back
+using `bitcoin-cli addnode "[IP.ADDRESS:PORT]" "add"`.
 
-	the bitcoin core client will start running in the background.  we can
-	now send RPC commands to `bitcoin-cli`.
+	the bitcoin core client will start running in the background.  we
+	can now send RPC commands to `bitcoin-cli`.
 
-	try running `bitcoin-cli getblockchaininfo`. you should see your stats
-	related to the regtest blockchain.
+	try running `bitcoin-cli getblockchaininfo`. you should see your
+	stats related to the regtest blockchain.
 	
 	now try running `bitcoin-cli getpeerinfo`. see how many nodes you
     are connected to.
 
-	**to stop the bitcoin client from running, type `bitcoin-cli stop`.**
+	**to stop the bitcoin client from running, type `bitcoin-cli
+    stop`.**
 
 	now run `bitcoin-cli help`. this summarizes some of the RPC
 	commands available. a more complete reference is available at
 	[[2]](https://bitcoin.org/en/developer-reference). `bitcoin-cli
 	help [CMD]` will give you specific info about a certain command;
 
-	note that the regtest blockchain offers some additional RPCs, such as
-	`bitcoin-cli generate [nblocks]`, which creates nblocks out of thin
-	air (which is obviously not possible in the traditional
-	protocol). **obs: don't use this command in our private blockchain, else
-	you can mess up the network's consensus by creating too many blocks
-	too fast.**
+	note that the regtest blockchain offers some additional RPCs, such
+	as `bitcoin-cli generate [nblocks]`, which creates nblocks out of
+	thin air (which is obviously not possible in the traditional
+	protocol). **obs: don't use this command in our private
+	blockchain, else you can mess up the network's consensus by
+	creating too many blocks too fast.**
 
 4. run `bitcoin-cli getnewaddress`. publish it to the course's online
    blackboard (check the README).

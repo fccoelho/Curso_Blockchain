@@ -20,3 +20,5 @@ RUN rm /etc/init.d/bitcoin
 # Make port 18444 available to the world outside this container. this
 # is the default port used by bitcoin core client in regtest mode
 EXPOSE 18444
+
+CMD ["ash"]
