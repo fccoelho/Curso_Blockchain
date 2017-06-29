@@ -35,7 +35,7 @@ Para isso precisamos criar, no diretório de dados da nossa rede privada um arqu
         "eip155Block": 0,
         "eip158Block": 0
     },
-    "difficulty": "200000000",
+    "difficulty": "20000",
     "gasLimit": "2100000",
     "alloc": {
         "7df9a875a174b3bc565e6424a0050ebc1b2d1d82": { "balance": "300000" },
