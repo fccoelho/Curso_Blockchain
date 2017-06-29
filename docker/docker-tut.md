@@ -17,11 +17,12 @@ me about any mistakes or possibilities of improvement!
    `docker [CMD] --help` is your friend.
 
 3. build the Dockerfile available on `/docker`: run `sudo docker build
-   -t bitalpine [PATH-TO-DOCKERFILE]`. make sure to read it first!
-   note that `bitalpine` is an arbitrary name to the container.
+   -t bitalpine [PATH-TO-DOCKERFILE-DIRECTORY]`. make sure to read it
+   first!  note that `bitalpine` is an arbitrary name to the
+   container.
 
 4. now run the image: `sudo docker run -it -p 4000:18444 --rm
-   bitalpine /bin/ash`
+   bitalpine`
 		
 	this should land you on the ash terminal of the alpine linux
     container.

@@ -50,8 +50,8 @@ confirmation, a lower value for a slower one, or even a value that is
 so low that it probably will never be accepted by a miner, and the
 transaction will never actually happen. you can even decide how the
 bitcoins you paid can be unlocked: instead of paying to an address,
-you can to whoever solves a puzzle, or even to the first person to
-redeem the transaction output -- you just have to lear write it
+you can pay to whoever solves a puzzle, or even to the first person to
+redeem the transaction output -- you just have to write it
 in [*script*](https://en.bitcoin.it/wiki/Script), a non-turing
 complete language which describes how UTXOs can be redeemed.
 
