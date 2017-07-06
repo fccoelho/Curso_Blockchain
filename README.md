@@ -4,15 +4,23 @@
 
 Flávio Codeço Coelho e Bruno Cuconato
 
-Curso introdutório a Criptomoedas e outras aplicações da tecnologia da Blockchain. Disciplina eletiva do Mestrado em modelagem matemática da FGV. Uma série de vídeo-aulas seguindo o programa do curso está disponível no [Youtube](https://www.youtube.com/watch?v=xqjow06qUEw).
+Curso introdutório a Criptomoedas e outras aplicações da tecnologia da
+Blockchain. Disciplina eletiva do Mestrado em modelagem matemática da
+FGV. Uma série de vídeo-aulas seguindo o programa do curso está
+disponível no [Youtube](https://www.youtube.com/watch?v=xqjow06qUEw).
 
 ## Avisos
 
 quadro online da classe: [[link]](https://hackmd.io/EYUwhgrATAbFIFooAYCcyEBYAmaFlTiWFRGwgDMQKBmAdkyA?both)
 
+**a partir do dia 20/07, teremos alguns seminários por aula sobre
+alguma altcoin, à escolha do aluno. as escolhas devem constar no
+quadro online da classe (acima ↑)**
+
 | data       | conteúdo |
 | ---------- | -------- |
 | 2017-06-22 | leitura prévia do *white paper* para a aula (ver bibliografia) |
+| 2017-06-13 | leitura prévia do paper [Raft](https://raft.github.io/raft.pdf) |
 
 ## Programa
 
