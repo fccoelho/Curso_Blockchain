@@ -65,6 +65,7 @@ quadro online da classe (acima ↑)**
 - [Lamport, L et al. The Part-Time Parliament](http://lamport.azurewebsites.net/pubs/lamport-paxos.pdf)
 
 - Raft [[page](https://raft.github.io/)] [[paper](https://raft.github.io/raft.pdf)]
+- [Generais bizantinos na Blockchain](https://docs.google.com/presentation/d/1hM2UPkStA0Xx73YC6SZnfGwsAxOTapgYLvB0EKBL9Jo/pub?start=false&loop=false&delayms=3000) 
 
 
 ### Outros
