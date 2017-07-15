@@ -127,7 +127,7 @@ won't do it for you. as the fees paid to miners are equal to the sum
 of the transaction inputs minus the sum of its inputs, this means that
 you'll be spending more bitcoins than you probably wanted to spend.
 
-to solve this, rerun the `create raw transaction` RPC, adding another
+to solve this, rerun the `createrawtransaction` RPC, adding another
 send-to-address field, this time sending the change you want to an
 address under your control (just calculate the fee you want to send
 using `sum-of-output-txs + tx-fees = sum-of-input-txs`).

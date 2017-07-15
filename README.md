@@ -4,15 +4,23 @@
 
 Flávio Codeço Coelho e Bruno Cuconato
 
-Curso introdutório a Criptomoedas e outras aplicações da tecnologia da Blockchain. Disciplina eletiva do Mestrado em modelagem matemática da FGV. Uma série de vídeo-aulas seguindo o programa do curso está disponível no [Youtube](https://www.youtube.com/watch?v=xqjow06qUEw).
+Curso introdutório a Criptomoedas e outras aplicações da tecnologia da
+Blockchain. Disciplina eletiva do Mestrado em modelagem matemática da
+FGV. Uma série de vídeo-aulas seguindo o programa do curso está
+disponível no [Youtube](https://www.youtube.com/watch?v=xqjow06qUEw).
 
 ## Avisos
 
 quadro online da classe: [[link]](https://hackmd.io/EYUwhgrATAbFIFooAYCcyEBYAmaFlTiWFRGwgDMQKBmAdkyA?both)
 
+**a partir do dia 20/07, teremos alguns seminários por aula sobre
+alguma altcoin, à escolha do aluno. as escolhas devem constar no
+quadro online da classe (acima ↑)**
+
 | data       | conteúdo |
 | ---------- | -------- |
 | 2017-06-22 | leitura prévia do *white paper* para a aula (ver bibliografia) |
+| 2017-06-13 | leitura prévia do paper [Raft](https://raft.github.io/raft.pdf) |
 
 ## Programa
 
@@ -57,6 +65,7 @@ quadro online da classe: [[link]](https://hackmd.io/EYUwhgrATAbFIFooAYCcyEBYAmaF
 - [Lamport, L et al. The Part-Time Parliament](http://lamport.azurewebsites.net/pubs/lamport-paxos.pdf)
 
 - Raft [[page](https://raft.github.io/)] [[paper](https://raft.github.io/raft.pdf)]
+- [Generais bizantinos na Blockchain](https://docs.google.com/presentation/d/1hM2UPkStA0Xx73YC6SZnfGwsAxOTapgYLvB0EKBL9Jo/pub?start=false&loop=false&delayms=3000) 
 
 
 ### Outros
