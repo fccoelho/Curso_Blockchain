@@ -24,3 +24,7 @@ Template.presenca.events({
     instance.counter.set(instance.counter.get() + 1);
   },
 });
+
+Template.matricula.onCreated(function matriculaOncreated(){
+    //lists registered students by querying the contract
+});
