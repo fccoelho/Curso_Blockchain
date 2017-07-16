@@ -6,8 +6,8 @@ contract Presenca{
         uint presencas;
     }
 
-    address professor;
-    mapping(address => Aluno) turma;
+    address public professor;
+    mapping(address => Aluno) public turma;
 
     function Presenca(){
         // Professor cria o contrato
@@ -17,6 +17,7 @@ contract Presenca{
     function registraAluno(address aluno){
         if (msg.sender != professor) return;
         turma[aluno].matriculado = true;
+        turma[aluno].presencas = 0;
     }
 
     function assinaPresenca(){
