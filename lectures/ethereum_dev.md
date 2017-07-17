@@ -86,7 +86,7 @@ geth --datadir eth-test-chain --networkid 15 --mine --minerthreads=1 --etherbase
 Podemos ainda abrir um console interativo:
 
 ```
-geth --datadir eth-test-chain --networkid 15 --dev console
+geth --datadir eth-test-chain --networkid 15 --rpc --rpcapi="db,eth,net,web3,personal" --dev console
 ```
 
 Notem o comando console no final. Ele significa que após iniciar nossa
