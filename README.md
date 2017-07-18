@@ -1,15 +1,31 @@
 # Introdução às Criptomoedas e aplicações na Blockchain
 
+> **Auditório 317, quintas-feiras às 14h.**
+
 Flávio Codeço Coelho e Bruno Cuconato
 
-Curso introdutório a Criptomoedas e outras aplicações da tecnologia da Blockchain. Disciplina eletiva do Mestrado em modelagem matemática da FGV.
+Curso introdutório a Criptomoedas e outras aplicações da tecnologia da
+Blockchain. Disciplina eletiva do Mestrado em modelagem matemática da
+FGV. Uma série de vídeo-aulas seguindo o programa do curso está
+disponível no [Youtube](https://www.youtube.com/watch?v=xqjow06qUEw).
+
+## Avisos
+
+quadro online da classe: [[link]](https://hackmd.io/EYUwhgrATAbFIFooAYCcyEBYAmaFlTiWFRGwgDMQKBmAdkyA?both)
+
+**a partir do dia 20/07, teremos alguns seminários por aula sobre
+alguma altcoin, à escolha do aluno. as escolhas devem constar no
+quadro online da classe (acima ↑)**
+
+| data       | conteúdo |
+| ---------- | -------- |
+| 2017-06-22 | leitura prévia do *white paper* para a aula (ver bibliografia) |
+| 2017-06-13 | leitura prévia do paper [Raft](https://raft.github.io/raft.pdf) |
 
 ## Programa
 
 1. Introdução ao Bitcoin e sua história
-2. O artigo histórico de [Satoshi 
-Nakamoto](https://en.wikipedia.org/wiki/Satoshi_Nakamoto): 
-https://bitcoin.org/bitcoin.pdf
+2. Usando o cliente bitcoin
 3. Criptomoedas: o que são e como são usadas
 3. Sessão prática interagindo com a tecnologia da Bitcoin usando Python
 4. "Proof of Work" da bitcoin. Do conceito à pratica.
@@ -25,11 +41,13 @@ https://bitcoin.org/bitcoin.pdf
 
 ### Bitcoin
 
-- white paper [[pdf]](bitcoin.org/bitcoin.pdf) [[HTML annotated]](https://genius.com/2683722) [[other formats]](https://github.com/karask/satoshi-paper)
+- white paper [[pdf]](https://bitcoin.org/bitcoin.pdf) [[errata]](https://gist.github.com/harding/dabea3d83c695e6b937bf090eddf2bb3) [[HTML annotated]](https://genius.com/2683722) [[other formats]](https://github.com/karask/satoshi-paper)
 
 - Mastering Bitcoin, Andreas Antonopoulos [[link]](http://chimera.labs.oreilly.com/books/1234000001802/index.html)
 
 - developer documentation [[guide]](https://bitcoin.org/en/developer-guide) [[reference]](https://bitcoin.org/en/developer-reference) [[link]](https://bitcoin.org/en/developer-documentation)
+
+- bitcoin para programadores [[pdf]](https://www.gitbook.com/download/pdf/book/itsriodejaneiro/bitcoin-para-programadores) [[repo]](https://github.com/BlockchainHub/bitcoin-para-programadores)
 
 
 ### Ethereum
@@ -47,6 +65,7 @@ https://bitcoin.org/bitcoin.pdf
 - [Lamport, L et al. The Part-Time Parliament](http://lamport.azurewebsites.net/pubs/lamport-paxos.pdf)
 
 - Raft [[page](https://raft.github.io/)] [[paper](https://raft.github.io/raft.pdf)]
+- [Generais bizantinos na Blockchain](https://docs.google.com/presentation/d/1hM2UPkStA0Xx73YC6SZnfGwsAxOTapgYLvB0EKBL9Jo/pub?start=false&loop=false&delayms=3000) 
 
 
 ### Outros
