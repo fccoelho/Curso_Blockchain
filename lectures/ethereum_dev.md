@@ -22,6 +22,8 @@ sudo apt-get update
 sudo apt-get install ethereum
 ```
 
+Caso voce prefira rodar um cliente ethereum a partir de uma imagem docker, siga [este tutorial](https://github.com/ethereum/go-ethereum/wiki/Running-in-Docker).
+
 ## Iniciando uma rede privada
 
 O promeiro passo no estabelecimento de uma rede privada é a criação de um bloco "Genesis".
@@ -49,7 +51,7 @@ Todos os pares que irão executar o `geth` devem possuir o mesmo bloco "Genesis"
 
 Agora precisamos inicializar nossa blockchain com este bloco.
 
-```
+```bash
 geth --datadir="eth-test-chain" init meuGenesis.json
 ```
 
@@ -61,7 +63,7 @@ geth --ipcpath eth-test-chain/geth.ipc --datadir eth-test-chain --networkid 15
 
 Agora precisamos iniciar um nó de bootstrap no qual os pares possam se conectar e
 
-```
+```bash
 bootnode --genkey=boot.key
 bootnode --nodekey=boot.key
 ```
@@ -72,25 +74,18 @@ Este comando vai retornar uma url para o seu enode que outros nós podem usar pa
 Para conectar outros nós ao nó de boot, basta iniciar  geth nas outras máquinas passando a url
 no enode obitda acima:
 
-```
+```bash
 geth --datadir eth-test-chain --networkid 15 --bootnodes <bootnode-enode-url>
-```
-
-Agora só falta configurar um processo minerador para esta blockchain, usando como etherbase um dos endereços definidos no bloco genesis.
-Este endereço vai receber
-
-```
-geth --datadir eth-test-chain --networkid 15 --mine --minerthreads=1 --etherbase="7df9a875a174b3bc565e6424a0050ebc1b2d1d82"
 ```
 
 Podemos ainda abrir um console interativo:
 
-```
+```bash
 geth --datadir eth-test-chain --networkid 15 --rpc --rpcapi="db,eth,net,web3,personal" --dev console
 ```
 
 Notem o comando console no final. Ele significa que após iniciar nossa
-blockchain privada, o Geth vai abrir um console para podermos interagir 
+blockchain privada, o `geth` vai abrir um console para podermos interagir 
 com a blockchain.
 
 Agora que iniciamos uma rede privada, podemos iniciar o Mist apontando 
@@ -98,8 +93,10 @@ para esta mesma rede.
 
 ## Iniciando o Mist
 
+O Mist precisa ser instalado separadamente do resto da stack do ethereum. Para isso consulte as [releases](https://github.com/ethereum/mist/releases) do Mist e baixe a que estiver de acordo com a versao do ethereum que voce tem instalada.
+
 ```bash
-mist --rpc <eth-test-chain>/geth.ipc
+mist --rpc eth-test-chain/geth.ipc
 ```
 
 Uma vez aberto o Mist, crie uma carteira. Este passo é muito importante pois para publicarmos um contrato precisaremos de Ether.
