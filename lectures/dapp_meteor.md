@@ -1,8 +1,7 @@
  
 # Criando um Frontend para o seu contrato
 
-Depois de publicado, o nosso contrato é apenas um programa na blockchain com uma  
-API, para facilitar a interação do publico-alvo com o contrato.
+Depois de publicado, o nosso contrato é apenas um programa na blockchain com um endereço e uma API, para facilitar a interação do publico-alvo com o contrato.
 
 Para este fim vamos construir um web app muito simples usando a framework
 [meteor](www.meteor.com) que é voltada para a construção de aplicativos em uma 
@@ -26,13 +25,15 @@ $ meteor create presencaDapp
 $ cd presencaDapp
 ```
 
-em seguida vamos adicionar um pacote o nosso projeto: o web3 do Ethereum
+em seguida vamos adicionar alguns pacotes ao nosso projeto, como por exemplo, o web3 do Ethereum:
 
 ```bash
 $ meteor add ethereum:web3
 $ meteor add ethereum:dapp-styles
 $ meteor add ethereum:tools
 ```
+
+A biblioteca web3 e um cliente javascript para a blockchain ethereum.
 
 ### Configurando o Dapp
 

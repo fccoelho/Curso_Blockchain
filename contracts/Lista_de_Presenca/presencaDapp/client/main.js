@@ -7,6 +7,7 @@ Template.presenca.onCreated(function presencaOnCreated() {
   // counter starts at 0
   this.counter = new ReactiveVar(0);
   EthBlocks.init();
+  console.log(web3);
 });
 
 Template.presenca.helpers({
