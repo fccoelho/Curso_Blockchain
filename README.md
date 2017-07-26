@@ -38,6 +38,7 @@ quadro online da classe (acima ↑)**
 10. [Desenvolvendo](/lectures/ethereum_dev.md) Aplicações na plataforma Ethereum
 11. Introdução à [linguagem Solidity](/lectures/Solidity.md)
 12. Desenvolvendo contratos robustos: [Open-zeppelin](https://openzeppelin.org/).
+13. Desenvolvendo aplicativos decentralizados [(Dapps) usando Meteor](/lectures/dapp_meteor.md).
 
 ## Bibliografia
 
