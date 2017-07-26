@@ -35,7 +35,7 @@ quadro online da classe (acima ↑)**
 7. [Proof of stake](https://en.wikipedia.org/wiki/Proof-of-stake).
 8. A plataforma Ethereum e os *smart contracts*.
 9. Ethereum: White e Yellow paper
-10. [Desenvolvendo](/lectures/ethereum-dev.md) Aplicações na plataforma Ethereum
+10. [Desenvolvendo](/lectures/ethereum_dev.md) Aplicações na plataforma Ethereum
 11. Introdução à [linguagem Solidity](/lectures/Solidity.md)
 12. Desenvolvendo contratos robustos: [Open-zeppelin](https://openzeppelin.org/).
 
