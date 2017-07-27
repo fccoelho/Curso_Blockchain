@@ -22,7 +22,7 @@ sudo apt-get update
 sudo apt-get install ethereum
 ```
 
-Caso voce prefira rodar um cliente ethereum a partir de uma imagem docker, siga [este tutorial](https://github.com/ethereum/go-ethereum/wiki/Running-in-Docker).
+Caso voce prefira rodar um cliente ethereum a partir de uma imagem docker, siga [este tutorial](https://github.com/ethereum/go-ethereum/wiki/Running-in-Docker). Se for instalar no MacOS, use [este tutorial](https://github.com/ethereum/go-ethereum/wiki/Installation-Instructions-for-Mac)
 
 ## Iniciando uma rede privada
 
