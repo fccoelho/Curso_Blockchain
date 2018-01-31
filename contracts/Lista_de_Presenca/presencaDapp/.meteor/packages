@@ -25,3 +25,4 @@ ethereum:web3
 less
 ethereum:accounts
 ethereum:blocks
+ethereum:elements

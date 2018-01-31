@@ -3,19 +3,34 @@
 </head>
 
 <body>
-  <h1>Introdução as criptomoedas e aplicações na Blockchain</h1>
-
+    <div align="right">{{> login}}</div>
+  <h1>Curso: Introdução as criptomoedas e aplicações na Blockchain</h1>
+  <h2>Turma</h2>
+  {{> turma}}
+  <h2>Presença</h2>
   {{> presenca}}
   <h2>Alunos Matriculados</h2>
   {{> matricula}}
   {{> info}}
 
 </body>
+<template name="login">
+    <form class="login-form">
+        <label>Endereço:</label><input name="addr" type="text" placeholder="Cole seu endereço aqui...">
+    </form><br>
+    {{dados}}
+</template>
+
+<template name="turma">
+    <p>Turma atual:
+    {{lista}}
+    </p>
+</template>
 
 <template name="presenca">
   <button>Assine a presença</button>
   <p>You've pressed the button {{counter}} times.</p>
-    {{currentBlock}}
+
 </template>
 
 <template name="matricula">
@@ -28,11 +43,9 @@
 </template>
 
 <template name="info">
-  <h2>Learn Meteor!</h2>
+  <h2>Aprenda a desenvolver Smart-contracts!</h2>
   <ul>
-    <li><a href="https://www.meteor.com/try" target="_blank">Do the Tutorial</a></li>
-    <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>
-    <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
-    <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
+    <li><a href="https://github.com/fccoelho/Curso_Blockchain" target="_blank">Material do Curso</a></li>
+      <li><a href="https://www.youtube.com/channel/UC54YMtvhbtCgPkHihJtcAYQ" target="_blank"></a>Video-aulas</li>
   </ul>
 </template>

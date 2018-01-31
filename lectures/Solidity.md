@@ -9,13 +9,17 @@ Nós vamos guiar o nosso estudo inicial pela análise de um [contrato](/contract
 
 Se você está seguindo este curso, já tem o seu ambiente de desnvolvimento configurado. Abra o *Mist* e a partir do menu *Desenvolvimento* selecione *Open Remix IDE*. Abaixo vai a minha janela do Remix já com um contrato aberto.
 
-![Janela do Remix](Remix.jpg)
+![Abrindo o Remix](OpenRemix.png)
+
+
 
 O *Remix* é uma IDE muito eficiente para a construção de contratos na linguagem *Solidity*.
 
 ## Começando a Programar em Solidity
 
 Vamos começar aos poucos a construir um contrato para servir de registro de presenças em um curso, entre os alunos e o professor.
+
+![Janela do Remix](Remix.jpg)
 
 a Primeira linha de comando que se escreve em um contrato é a seguinte:
 
