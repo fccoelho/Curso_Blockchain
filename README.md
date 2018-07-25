@@ -1,12 +1,11 @@
-# Introdução às Criptomoedas e aplicações na Blockchain
+# Criptomoedas e Blockchain
 
-> **Auditório 317, quintas-feiras às 14h.**
+> **Escola de matemática aplicada - FGV**
 
-Flávio Codeço Coelho e Bruno Cuconato
+Flávio Codeço Coelho
 
 Curso introdutório a Criptomoedas e outras aplicações da tecnologia da
-Blockchain. Disciplina eletiva do Mestrado em modelagem matemática da
-FGV. Uma série de vídeo-aulas seguindo o programa do curso está
+Blockchain. Disciplina eletiva das graduações em Ciencia de Dados e Matemática aplicada da FGV. Uma série de vídeo-aulas seguindo o programa do curso está
 disponível no [Youtube](https://www.youtube.com/watch?v=xqjow06qUEw).
 
 ## Avisos
@@ -19,12 +18,12 @@ quadro online da classe (acima ↑)**
 
 | data       | conteúdo |
 | ---------- | -------- |
-| 2017-06-22 | leitura prévia do *white paper* para a aula (ver bibliografia) |
-| 2017-06-13 | leitura prévia do paper [Raft](https://raft.github.io/raft.pdf) |
+| 2018-08-02 | leitura prévia do *white paper* para a aula (ver bibliografia) |
+| 2018-08-09 | leitura prévia do paper [Raft](https://raft.github.io/raft.pdf) |
 
 ## Programa
 
-1. Introdução ao Bitcoin e sua história
+1. Introdução ao Bitcoin e sua história; A origem das criptomoedas
 2. Usando o cliente bitcoin
 3. Criptomoedas: o que são e como são usadas
 3. Sessão prática interagindo com a tecnologia da Bitcoin usando Python
@@ -108,3 +107,9 @@ quadro online da classe (acima ↑)**
 #### Proof of Burn
 
 - Slimcoin paper [[pdf](http://www.slimcoin.club/whitepaper.pdf)]
+
+
+
+## Contribuidores
+1. Bruno Cuconato @odanoburu
+1. João Carabetta @JoaoCarabetta
