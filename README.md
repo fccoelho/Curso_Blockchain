@@ -10,7 +10,7 @@ disponível no [Youtube](https://www.youtube.com/watch?v=xqjow06qUEw).
 
 ## Avisos
 
-quadro online da classe: [[link]](https://hackmd.io/EYUwhgrATAbFIFooAYCcyEBYAmaFlTiWFRGwgDMQKBmAdkyA?both)
+> [**Quadro online do curso**](https://hackmd.io/EYUwhgrATAbFIFooAYCcyEBYAmaFlTiWFRGwgDMQKBmAdkyA?both)
 
 **a partir do dia 20/07, teremos alguns seminários por aula sobre
 alguma altcoin, à escolha do aluno. as escolhas devem constar no
