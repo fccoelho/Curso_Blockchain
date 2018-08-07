@@ -54,7 +54,7 @@ quadro online da classe (acima ↑)**
 
 ### Ethereum
 
-- white paper [en](https://github.com/ethereum/wiki/wiki/White-Paper) [pt](https://github.com/ethereum/wiki/wiki/%5BPortuguese%5D-White-Paper) [PDF](/Ethereum_White-Paper.pdf)
+- white paper [en](https://github.com/ethereum/wiki/wiki/White-Paper) [pt](https://github.com/ethereum/wiki/wiki/%5BPortuguese%5D-White-Paper) [PDF](/Ethereum-White-Paper.pdf)
 
 - [yellow paper](https://ethereum.github.io/yellowpaper/paper.pdf)
 - [Beige paper](https://github.com/chronaeon/beigepaper)
