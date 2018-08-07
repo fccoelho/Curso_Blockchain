@@ -56,9 +56,12 @@ quadro online da classe (acima ↑)**
 
 - white paper [en](https://github.com/ethereum/wiki/wiki/White-Paper) [pt](https://github.com/ethereum/wiki/wiki/%5BPortuguese%5D-White-Paper) [PDF](/Ethereum_White-Paper.pdf)
 
+- [Wiki](https://github.com/ethereum/wiki/wiki)
 - [yellow paper](https://ethereum.github.io/yellowpaper/paper.pdf)
 - [Beige paper](https://github.com/chronaeon/beigepaper)
 - [Solidity Docs](http://solidity.readthedocs.io/en/latest/)
+- [py-EVM](https://github.com/ethereum/py-evm)
+- [Vyper](https://github.com/ethereum/vyper)
 
 ### Byzantine Fault Tolerant Protocols
 
