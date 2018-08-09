@@ -1,13 +1,16 @@
-building a toy blockchain
-=========================
+# Building blocks of blockchains
 
-this directory has instructions for suggested exercises which combined amount 
-to the building of a toy blockchain.
 
-after choosing an assignment, create an issue letting others know that you will 
-implement it. please put your code on the ``toychain`` module at 
-the ``/toy-blockchain`` directory. 
+This directory contains the takhome assignments which will form part of your grade.
 
-please try to follow the requirements in each assignment, but if you find a 
-problem with them be flexible. let us know in the issue you created what was the 
+For each assignment,
+
+- Create an issue and assing it to you.
+- Clone the repo on your machine, and create a branch with your name.
+- Implement it.
+- Commit your implementation to your branch in the [Solutions](/assignments/Solutions) directory.
+- When you are all done, make a pull request.
+
+Please try to follow the requirements in each assignment, but if you find a
+problem with them be flexible. let me know in the issue you created what was the
 problem and what was your solution.

@@ -1,4 +1,4 @@
-# building a merkle tree
+# Building a merkle tree
 
 In this exercise you are asked to implement a merkle tree. check
 [here](https://en.bitcoin.it/wiki/Protocol_documentation#Merkle_Trees),
@@ -6,7 +6,7 @@ In this exercise you are asked to implement a merkle tree. check
 or [here](https://bitcoin.org/en/developer-guide#transaction-data)
 for references. 
 
-if you have any doubts, let us know in the issue you create 
+If you have any questions, let us know in the issue you create
 after choosing this assignment.
 
 ## Requirements
@@ -45,3 +45,5 @@ after choosing this assignment.
 
 1. Add a ``delete_leaf`` method that will delete the given input leaves, and
    re-calculate the merkle tree without them.
+
+1. Implement a Merkle-patricia tree (like the one described in Ethereum's yellow paper)
