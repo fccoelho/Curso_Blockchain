@@ -1,45 +1,45 @@
-# Criptomoedas e Blockchain
+# Cryptocurrencies and Blockchain
 
-> **Escola de matemática aplicada - FGV**
+> **School of applied Mathematics - FGV**
 
 Flávio Codeço Coelho
 
-Curso introdutório a Criptomoedas e outras aplicações da tecnologia da
-Blockchain. Disciplina eletiva das graduações em Ciencia de Dados e Matemática aplicada da FGV. Uma série de vídeo-aulas seguindo o programa do curso está
-disponível no [Youtube](https://www.youtube.com/watch?v=xqjow06qUEw).
+Introductory course on cryptocurrencies and other applications of blockchain technology.
+This course is part of the Applied Maths and Data-Science Undergraduate programs of FGV
 
-## Avisos
+Video lectures (in portuguese) are available on [Youtube](https://www.youtube.com/watch?v=xqjow06qUEw), covering part of this course's content.
 
-> [**Quadro online do curso**](https://hackmd.io/EYUwhgrATAbFIFooAYCcyEBYAmaFlTiWFRGwgDMQKBmAdkyA?both)
+## News and announcements
 
-**a partir do dia 20/07, teremos alguns seminários por aula sobre
-alguma altcoin, à escolha do aluno. as escolhas devem constar no
-quadro online da classe (acima ↑)**
+> [**Online Billboard**](https://hackmd.io/EYUwhgrATAbFIFooAYCcyEBYAmaFlTiWFRGwgDMQKBmAdkyA?both)
 
-| data       | conteúdo |
+
+
+| date       | conteúdo |
 | ---------- | -------- |
 | 2018-08-02 | leitura prévia do *white paper* para a aula (ver bibliografia) |
 | 2018-08-09 | leitura prévia do paper [Raft](https://raft.github.io/raft.pdf) |
 
-## Programa
+## Sylabus
 
-1. Introdução ao Bitcoin e sua história; A origem das criptomoedas
-2. Usando o cliente bitcoin
-3. Criptomoedas: o que são e como são usadas
-3. Sessão prática interagindo com a tecnologia da Bitcoin usando Python
-4. "Proof of Work" da bitcoin. Do conceito à pratica.
-5. Curvas Elípticas e sua aplicação na Bitcoin.
-    - RSA como modelo de public key cryptography
+1. Introdution to Bitcoin and its history; the origin of cryptocurrencies
+2. Using Bitcoin Client
+3. Cryptocurrencies: A global overview of the most important coins and how they work
+3. Interacting with Bitcoin's blockchain from the Python console
+4. Bitcoin's "Proof of Work" da bitcoin. From concepts to practice.
+1. Introduction to Cryptographic Hash functions and their use on Blockchains.
+5. Eliptical Curve Cryptography and their use in Bitcoin.
+    - RSA as a model of public key cryptography
 6. Alt coins
 7. [Proof of stake](https://en.wikipedia.org/wiki/Proof-of-stake).
-8. A plataforma Ethereum e os *smart contracts*.
+8. The Ethereum platform and *smart contracts*.
 9. Ethereum: White e Yellow paper
 10. [Desenvolvendo](/lectures/ethereum_dev.md) Aplicações na plataforma Ethereum
-11. Introdução à [linguagem Solidity](/lectures/Solidity.md)
-12. Desenvolvendo contratos robustos: [Open-zeppelin](https://openzeppelin.org/).
-13. Desenvolvendo aplicativos decentralizados [(Dapps) usando Meteor](/lectures/dapp_meteor.md).
+11. Introduction to the [Solidity Language](/lectures/Solidity.md)
+12. Developing smart contracts: [Open-zeppelin](https://openzeppelin.org/).
+13. Developping Decentralized Apps [(Dapps)](/lectures/dapp_meteor.md) using Meteor.
 
-## Bibliografia
+## Bibliography
 
 ### Bitcoin
 
@@ -73,7 +73,7 @@ quadro online da classe (acima ↑)**
 - [Generais bizantinos na Blockchain](https://docs.google.com/presentation/d/1hM2UPkStA0Xx73YC6SZnfGwsAxOTapgYLvB0EKBL9Jo/pub?start=false&loop=false&delayms=3000) 
 
 
-### Outros
+### Other sources
 
 - Bitcoin and Cryptocurrency Technologies (textbook) [[preprint](https://d28rh4a8wq0iu5.cloudfront.net/bitcointech/readings/princeton_bitcoin_book.pdf?a=1)] [[amazon](https://www.amazon.com/gp/product/0691171696/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0691171696&linkCode=as2&tag=jbonneau-20&linkId=59f35df2a92dd877cd22363bd8373a35)]
 
@@ -85,7 +85,8 @@ quadro online da classe (acima ↑)**
 
 - [Kosba, A et al. Hawk: The Blockchain Model of Cryptography and Privacy-Preserving Smart Contracts](https://eprint.iacr.org/2015/675.pdf)
 
-### Provas
+### Proofs
+Blockchains rely on different proving strategies to ensure distributed consensus. We will discuss some of them in this course.
 
 #### Proofs of work
 
@@ -113,6 +114,6 @@ quadro online da classe (acima ↑)**
 
 
 
-## Contribuidores
+## Contributors
 1. Bruno Cuconato @odanoburu
 1. João Carabetta @JoaoCarabetta
