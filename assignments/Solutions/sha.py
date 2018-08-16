@@ -1,5 +1,6 @@
 u"""
 This implementation is taken from the Pypy sourcecode repository for instructional purposes
+The code has been adapted to be compatible with python 3.*
 """
 import struct
 
