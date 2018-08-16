@@ -264,7 +264,7 @@ class MD5Type:
         minimal recalculation if we call update() to add moredata to
         the hashed string.
         """
-
+        # inBuf = bytes(inBuf, encoding='utf8')
         leninBuf = len(inBuf)
 
         # Compute number of bytes mod 64.
@@ -342,7 +342,7 @@ class MD5Type:
         binary environments.
         """
 
-        return ''.join(['%02x' % ord(c) for c in self.digest()])
+        return ''.join(['%02x' % c for c in self.digest()])
 
     def copy(self):
         """Return a clone object.
@@ -385,7 +385,7 @@ def new(arg=None):
 
 def test():
     assert 'd41d8cd98f00b204e9800998ecf8427e' == new('').hexdigest()
-
+    assert '430a05c2503818775fcc7c5b54f82b66' == new('my secret message').hexdigest()
 
 
 if __name__ == "__main__":
