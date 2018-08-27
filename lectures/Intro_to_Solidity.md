@@ -16,7 +16,7 @@ Later on we will need a private blockchain to deploy contracts to and for that w
 
 ## First contact with the language: a Voting contract
 
-We will start to familiarize ourselves with solidity through the [voting contract](/contracts/Intro to Solidity/ballot.sol) from the solidity documentation.
+We will start to familiarize ourselves with solidity through the [voting contract](/contracts/Intro-to-Solidity/ballot.sol) from the solidity documentation.
 
 The first line of any contract should be what is called the `pragma` which is a declaration of the version number of the compiler for which the contract was written for
 
