@@ -11,7 +11,7 @@ contract Presenca{
 
     // Professor cria o contrato
 
-    function Presenca() {
+    constructor() public {
         professor = msg.sender;
     }
 
