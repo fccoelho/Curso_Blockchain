@@ -85,6 +85,7 @@ Video lectures (in portuguese) are available on [Youtube](https://www.youtube.co
 - permaCoin whitepaper [[link]](https://www.cs.umd.edu/~elaine/docs/permacoin.pdf)
 
 - [Kosba, A et al. Hawk: The Blockchain Model of Cryptography and Privacy-Preserving Smart Contracts](https://eprint.iacr.org/2015/675.pdf)
+- [Cryptoeconomics course](https://cryptoeconomics.study/)
 
 ### Proofs
 Blockchains rely on different proving strategies to ensure distributed consensus. We will discuss some of them in this course.
