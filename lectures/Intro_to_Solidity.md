@@ -96,6 +96,122 @@ Every contract can contain code which executed only at the moment the contract i
     }
 ```
 
-For this contract's constructor,
+For this contract's constructor, one argument is required which is a list of proposal names. `proposalNames` is a array of `bytes32` strings. The variable `msg.sender` is the address of the user that deployed the contract.
 
+### The remaining logic
 
+```solidity
+    // Give `voter` the right to vote on this ballot.
+    // May only be called by `chairperson`.
+    function giveRightToVote(address voter) public {
+        // If the first argument of `require` evaluates
+        // to `false`, execution terminates and all
+        // changes to the state and to Ether balances
+        // are reverted.
+        // This used to consume all gas in old EVM versions, but
+        // not anymore.
+        // It is often a good idea to use `require` to check if
+        // functions are called correctly.
+        // As a second argument, you can also provide an
+        // explanation about what went wrong.
+        require(
+            msg.sender == chairperson,
+            "Only chairperson can give right to vote."
+        );
+        require(
+            !voters[voter].voted,
+            "The voter already voted."
+        );
+        require(voters[voter].weight == 0);
+        voters[voter].weight = 1;
+    }
+
+    /// Delegate your vote to the voter `to`.
+    function delegate(address to) public {
+        // assigns reference
+        Voter storage sender = voters[msg.sender];
+        require(!sender.voted, "You already voted.");
+
+        require(to != msg.sender, "Self-delegation is disallowed.");
+
+        // Forward the delegation as long as
+        // `to` also delegated.
+        // In general, such loops are very dangerous,
+        // because if they run too long, they might
+        // need more gas than is available in a block.
+        // In this case, the delegation will not be executed,
+        // but in other situations, such loops might
+        // cause a contract to get "stuck" completely.
+        while (voters[to].delegate != address(0)) {
+            to = voters[to].delegate;
+
+            // We found a loop in the delegation, not allowed.
+            require(to != msg.sender, "Found loop in delegation.");
+        }
+
+        // Since `sender` is a reference, this
+        // modifies `voters[msg.sender].voted`
+        sender.voted = true;
+        sender.delegate = to;
+        Voter storage delegate_ = voters[to];
+        if (delegate_.voted) {
+            // If the delegate already voted,
+            // directly add to the number of votes
+            proposals[delegate_.vote].voteCount += sender.weight;
+        } else {
+            // If the delegate did not vote yet,
+            // add to her weight.
+            delegate_.weight += sender.weight;
+        }
+    }
+
+    /// Give your vote (including votes delegated to you)
+    /// to proposal `proposals[proposal].name`.
+    function vote(uint proposal) public {
+        Voter storage sender = voters[msg.sender];
+        require(!sender.voted, "Already voted.");
+        sender.voted = true;
+        sender.vote = proposal;
+
+        // If `proposal` is out of the range of the array,
+        // this will throw automatically and revert all
+        // changes.
+        proposals[proposal].voteCount += sender.weight;
+    }
+
+    /// @dev Computes the winning proposal taking all
+    /// previous votes into account.
+    function winningProposal() public view
+            returns (uint winningProposal_)
+    {
+        uint winningVoteCount = 0;
+        for (uint p = 0; p < proposals.length; p++) {
+            if (proposals[p].voteCount > winningVoteCount) {
+                winningVoteCount = proposals[p].voteCount;
+                winningProposal_ = p;
+            }
+        }
+    }
+
+    // Calls winningProposal() function to get the index
+    // of the winner contained in the proposals array and then
+    // returns the name of the winner
+    function winnerName() public view
+            returns (bytes32 winnerName_)
+    {
+        winnerName_ = proposals[winningProposal()].name;
+    }
+}
+```
+The rest of the code does not contain many surprises or new language elements. The `while` loop in the `delegate` function is something to worry about because it can lead to vry large gas costs. We should try to avoid at all costs, loops without clear ending conditions.
+
+## Other example contracts
+In the [/contracts/Intro-to-Solidity](/contracts/Intro-to-Solidity) directory you can find other contracts (from the Solidity official docs) to study. I suggest you open them in the remix IDE compile and deploy then on a private blockchain to fully understand how they work.
+
+In the [Open Auction contract](/contracts/Intro-to-Solidity/openauction.sol), the concept of a payable contract is introduced along with new language elements such as `events`.
+
+In the [Blind Auction contract](/contracts/Intro-to-Solidity/blindauction.sol), we introduce `modifiers`, `requires` and the use of absolute time in a contract. We also use the builtin `keccak256`cryptographic hash function to make the auction blind.
+
+In the [Purchase contract](/contracts/Intro-to-Solidity/purchase.sol), a very common application, a safe remote purchase based exclusively on a smart-contract is introduced, using the elements of the language already introduced in previous contracts.
+
+Finally a complete implementation of a micropayment channel is presented, complete with both the smart-contract and bits of javascript code to interact with the channel. Here we refer the reader to the official docs as the example includes multiple files.
