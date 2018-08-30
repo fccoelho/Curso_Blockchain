@@ -214,4 +214,4 @@ In the [Blind Auction contract](/contracts/Intro-to-Solidity/blindauction.sol), 
 
 In the [Purchase contract](/contracts/Intro-to-Solidity/purchase.sol), a very common application, a safe remote purchase based exclusively on a smart-contract is introduced, using the elements of the language already introduced in previous contracts.
 
-Finally a complete implementation of a micropayment channel is presented, complete with both the smart-contract and bits of javascript code to interact with the channel. Here we refer the reader to the official docs as the example includes multiple files.
+Finally, a complete implementation of a micropayment channel is presented, complete with both the smart-contract and bits of javascript code to interact with the channel. Here we refer the reader to the official docs as the example includes multiple files.
