@@ -12,22 +12,27 @@ after choosing this assignment.
 ## Requirements
 
 
-*Naming*
+- *Naming*
+
     class ``MerkleTree``, methods ``leaves`` (to save the input) and 
     ``make_merkle_tree``.
 
-*Input*
+- *Input*
+
     any iterator (such as list) of arbitrary strings.
 
-*Output*
+- *Output*
+
     the merkle tree, obviously. what is the ideal data structure for it?
 
-*Order*
+- *Order*
+
     the algorithm must be deterministic: the same set of strings should return 
     the same merkle tree. (obs.: this is *not* desirable for the real world, 
     but is useful for debugging).
 
-*Hash function*
+- *Hash function*
+
     please use SHA2-256 as in bitcoin (no need to hash twice as in bitcoin, 
     though).
 
