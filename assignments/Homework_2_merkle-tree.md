@@ -6,6 +6,8 @@ In this exercise you are asked to implement a merkle tree. check
 or [here](https://bitcoin.org/en/developer-guide#transaction-data)
 for references. 
 
+For a gentle introduction to Merkle trees, read [this](https://www.codeproject.com/Articles/1176140/Understanding-Merkle-Trees-Why-use-them-who-uses-t#HowDoesDataVerification(AuditProof)Work13).
+
 If you have any questions, let us know in the issue you create
 after choosing this assignment.
 

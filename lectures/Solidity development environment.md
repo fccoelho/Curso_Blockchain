@@ -28,3 +28,13 @@ then the array you will pass to the constructor will look like this:
 ```solidity
 ["0x7726f76f73616c231","0x7726f76f73616c232"]
 ```
+
+Once this challenge is overcome and you manage to deploy the contract, Remix will show a simple graphical interface to your deployed contract at the bottom of the run tab. From this interface you will be able to inspect public variables and make calls to the contract's API without having to write any code.
+
+As you interact with the contract in this way, if you are using Remix's internal javascript ethereum client, you will see the transactions being mined in the console at the bottom of the Remix page.
+
+![transactions](transactions_remix.jpg)
+
+Beside the transactions, you will see a debug button which can be clicked taking you to the debug tab, where you can step through the transaction inspecting variables, gas usage, etc. 
+
+![debug](debug_remix.jpg)
