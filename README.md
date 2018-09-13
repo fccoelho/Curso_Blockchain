@@ -38,6 +38,7 @@ Video lectures (in portuguese) are available on [Youtube](https://www.youtube.co
 10. [Desenvolvendo](/lectures/ethereum_dev.md) Aplicações na plataforma Ethereum
 11. Introduction to the [Solidity Language](/lectures/Solidity.md)
 12. Developing smart contracts: [Open-zeppelin](https://openzeppelin.org/).
+1. Interacting with contracts from [Javascript](https://web3js.readthedocs.io/en/1.0/) and [Python](https://web3py.readthedocs.io/en/stable/).
 13. Developping Decentralized Apps [(Dapps)](/lectures/dapp_meteor.md) using Meteor.
 
 ## Bibliography
