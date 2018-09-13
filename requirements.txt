@@ -3,3 +3,4 @@ sympy
 coincurve
 bitcoin
 pycryptodome
+web3
