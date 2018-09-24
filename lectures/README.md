@@ -9,3 +9,4 @@ Anyone using this course should use these lectures in the following order:
 1. [Ethereum development with geth and Mist](ethereum_dev.md)
 1. [Introduction to Solidity](Intro_to_Solidity.md)
 1. [Solidity development environment](Solidity%20development%20environment.md)
+1. [Token Contracts](token-contracts.md)
