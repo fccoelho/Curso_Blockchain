@@ -1,5 +1,4 @@
 from hashlib import sha256
-from copy import deepcopy
 
 class MerkleTree():
     
@@ -112,14 +111,18 @@ class MerkleTree():
             self.leaves.append(transactions)
         return new_merkle_tree
         
+    def partial_merkle_tree(self, root, tree=None):
+        """
+        return the partial merkle tree where the root is the first ocurrence 
+        (top-bottom, left-right) of the `root` input in the `tree`.
         
-# The following functions do not contribute for the assignment.
-
-    def __merkle_root_search__(self, merkle_tree, root):
+        :input root: string | The hash of the node that will be the root of the partial tree.
+        :input tree: dict | The merkle tree. If None, will be used the self.tree.
+        
+        :return: dict | The partial merkle tree.
         """
-        return the partial merkle tree where the root is `root` input. 
-        """
-        tree = deepcopy(merkle_tree)
+        if tree == None:
+            tree = self.tree
         
         # Uhul! We found.
         if tree['key'] == root:
@@ -132,32 +135,52 @@ class MerkleTree():
         # We still hope to find.
         else:            
             # Search the left child tree
-            left_search = merkle_root_search(tree['left']) 
+            left_search = self.partial_merkle_tree(root, tree['left']) 
             if left_search != None:
                 return left_search
             
             #if the root isn't in the left, search in the right child tree
             else:
-                return merkle_root_search(tree['right'])
+                return self.partial_merkle_tree(root, tree['right'])
             
-    def __get_leaves__(self, tree, leaves=[]):
+    def get_leaves(self, tree, leaves=None):
         """
+        Returns the leaves of a merkle tree.
+        
         Recursive function to get the leaves of a merkle tree.
         """
-        # It is a leave!!!!! Uhul
+        
+        if leaves == None:
+            leaves = []
+        
+        # It is a leaf!!!!! Uhul
         if tree['left'] == None:
             leaves.append(tree['key'])
         else:
-            leaves = self.__get_leaves__(tree['left'], leaves)
-            leaves = self.__get_leaves__(tree['right'], leaves)
+            leaves = self.get_leaves(tree['left'], leaves)
+            leaves = self.get_leaves(tree['right'], leaves)
         
         return leaves 
                 
-    def verify_leaf(self, leave, merkle_root):
-        ## Not finished.
+    def verify_leaf(self, leaf, merkle_root, tree=None, leaf_hash=False):
+        """
+        Verify if `leaf` is a leaf of the partial merkle tree `tree`, where the 
+        root is the first occurrence (top-bottom, left-right) of the `merkle_root`.
         
-        leave_hash = self.__sha256_function__(leave)
-        specific_tree = self.__merkle_root_search__(tree, merkle_root)
-        leaves = self.__get_leaves__(specific_tree, [])
-        ### ???
+        :input leaf: string | the leaf string that will be verified.
+        :input merkle_root: hash string | hash of the node that will be considered root.
+        :input tree: dict | the merkle tree. If None, will be used the self.tree.
+        :input leaf_hash: bool | True if the `leaf` is a hash. False, otherwise.
         
+        :return: True if the leaf is in tree. False, otherwise.
+        """
+        if tree == None:
+            tree = self.tree
+            
+        if not leaf_hash:
+            leaf = self.__sha256_function__(leaf)
+        specific_tree = self.partial_merkle_tree(merkle_root, tree)
+        leaves = self.get_leaves(specific_tree)
+        if leaf in leaves:
+            return True
+        return False
