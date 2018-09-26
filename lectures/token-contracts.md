@@ -3,7 +3,8 @@
 One of the most widely used type of smart-contract on the Ethereum blockchain is some variation of a token contract. A **token** is a currency issued and managed by a smart contract. Over the years many uses for tokens have been proposed and applied:
 
 - **Utility tokens**: tokens that are issued by a company and have some pre-defined utility, such as being used to "buy" services from that company.
-- 
+- **Security tokens**: Equivalent to traditional securities. Used to represent participation in physical assets, or companies, or some sort of dividend earning.
+- **Payment tokens**: Equivalent to primary cryptocurrencies, i.e., they have no other purposed than to serve as a currency.
 
 Tokens can be created by anyone with the ability to write and publish a contract. Due to the wide applicability of *Tokens*, it did not take long for templates to emerge, embodying the best practices for token security, these templates are also know as standards and in this lecture we will explore the most used token standards. There are [many tokens in existence](https://ethplorer.io/top?from=etop), i. e., token contracts published on the Ethereum blockchain.
 
