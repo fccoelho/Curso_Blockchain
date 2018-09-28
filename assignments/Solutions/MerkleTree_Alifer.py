@@ -1,3 +1,7 @@
+"""
+Solution to homework 2 contributed by Alifer Sales
+"""
+
 from hashlib import sha256
 
 class MerkleTree():
