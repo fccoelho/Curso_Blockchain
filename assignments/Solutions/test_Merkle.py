@@ -24,10 +24,8 @@ class TestMerkleTree(unittest.TestCase):
         self.assertIsInstance(mt, MerkleTree)
     def test_order(self):
         mt = MerkleTree(test_leaves_even)
-        random.shuffle(test_leaves_even)
-        mt2 = MerkleTree(test_leaves_even)
-
-        self.assertListEqual(test_leaves_even, mt2.leaves)
+        mt2 = MerkleTree(['bola', 'casa', 'caixa', 'peixe'])
+        self.assertListEqual(mt.root, mt2.root)
     def test_verify_leaves(self):
         mt = MerkleTree(test_leaves_even)
         r = mt.verify_leaf('casa', mt.root)
