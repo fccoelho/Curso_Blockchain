@@ -20,8 +20,41 @@ the following command will install Truffle:
 ```bash
 npm install -g truffle
 ```
-denpending on how you installed *node* you may need to run the command above as *root* or with *sudo*. Then you can install the OpenZeppelin library.
+depending on how you installed *node* you may need to run the command above as *root* or with *sudo*. Then you can install the OpenZeppelin library.
+First you create the project directory.
 ```bash
-npm install -g openzeppelin-solidity
+mkdir ICO
+cd ICO
+truffle init
+``` 
+Then in order to install the Openzeppelin library, do:
+```bash
+npm init -y 
+npm install -E zeppelin-solidity
 ```
 
+`npm init -y` initializes the `package.json` file:
+
+```json
+{
+  "name": "ICO",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "openzeppelin-solidity": "^1.12.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+```
+
+This file contains metadata about the package and also declares dependencies of your package. Note that a `node_modules` directory is also create at the root of your project directory. this is where libraries needed by your project will reside. Do not fiddle with the contents of this directory. It will be managed by `npm`.
