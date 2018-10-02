@@ -2,6 +2,8 @@
 Solution to homework 2 contributed by Alifer Sales
 """
 
+from hashlib import sha256
+
 def string_to_sha256(string):
 
     if isinstance(string,str):
