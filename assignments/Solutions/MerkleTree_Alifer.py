@@ -4,187 +4,90 @@ Solution to homework 2 contributed by Alifer Sales
 
 from hashlib import sha256
 
+def string_to_sha256(string):
+
+    if isinstance(string,str):
+        string = string.encode()
+
+    output = sha256()
+    output.update(string)
+    return output.hexdigest()
 
 class MerkleTree():
-
-    def __init__(self, transactions):
+    
+    def __init__(self, leaves):
         """
-        Merkle tree implementation. Initialize with the leaf nodes 
+        Merkle tree implementation. Initialize with the leaves nodes 
         and return a MerkleTree object, with some appropriates methods.
         
-        :input transactions: iterable (as list) of strings.
+        :input leaves: iterable (as list) of strings.
         """
-
-        self.leaves = [transactions]
-        self.tree = self.make_merkle_tree(transactions)
-
-    @staticmethod
-    def __sha256_function__(string):
-
-        if isinstance(string, str):
-            string = string.encode()
-
-        output = sha256()
-        output.update(string)
-        return output.hexdigest()
-
-    def __merkle_tree_builder__(self, merkle_tree):
-        """
-        Auxiliar recursive function to create go up one level on
-        the merkle tree.
         
-        :input merkle_tree: list of merkle trees
-        """
-
-        new_merkle_tree = []
-        for i in range(0, len(merkle_tree), 2):
-
-            if i < len(merkle_tree) - 1:
-                first_node = merkle_tree[i]
-                second_node = merkle_tree[i + 1]
-
-            else:  # odd number of nodes case
-                first_node = merkle_tree[i]
-                second_node = merkle_tree[i]
-
-            new_node = {'key': self.__sha256_function__(first_node['key'] + second_node['key']),
-                        'left': first_node,
-                        'right': second_node
-                        }
-            new_merkle_tree.append(new_node)
-
-        return new_merkle_tree
-
-    def make_merkle_tree(self, transactions):
-        """
-        Create a merkle tree based on the transactions strings input.
+        self.leaves = leaves
+        self.is_ready = False
+        self.levels = []
+        self.root = None
         
-        :input transactions: iterable (as list) of strings.
-        :output: Returns the merkle tree for the inputed transactions.
-        """
-
-        ## Hash the transactions string
-        current_row = list(map(self.__sha256_function__, transactions))
-
-        ## As each element of current_row is a leaf, create the leaf structure
-        merkle_tree = []
-        for i in current_row:
-            merkle_tree.append(
-                {'key': i, 'left': None, 'right': None}
-            )
-
-        ## When there are only the leafs on the `merkle_tree`, we are on the
-        ## bottom level of the tree. Each iteration will go up one tree level,
-        ## decreasing the number of nodes untill the top level of tree, when
-        ## `merkle_tree` will have only a dict, with the complete merkle tree.
-        while len(merkle_tree) > 1:
-            merkle_tree = self.__merkle_tree_builder__(merkle_tree)
-
-        return merkle_tree[0]
-
-    def join_trees(self, transactions, merkle_tree=None):
-        """
-        Return a join of a existent merkle tree with a new merkle tree, based on the
-        transactions input.
         
-        :input transactions: iterable (as list) of strings | Transactions of the new merkle tree.
-        :input merkle_tree: dict | The already existent merkle tree that will be joined. 
-                            If None, will be used the self.tree and it will be changed with output.
-        :output: Returns a joined merkle tree with the `merkle_tree` and the transactions merkle tree. 
-        """
-        change_original_tree = False
-        if merkle_tree == None:
-            merkle_tree = self.tree
-            change_original_tree = True
-
-        first_tree = tree
-        second_tree = self.make_merkle_tree(transactions)
-
-        ## Join the trees
-        new_merkle_tree = {
-            'key': self.__sha256_function__(first_tree['key'] + second_tree['key']),
-            'left': first_tree,
-            'right': second_tree
-        }
-
-        if change_original_tree:
-            self.tree = new_merkle_tree
-            self.leaves.append(transactions)
-        return new_merkle_tree
-
-    def partial_merkle_tree(self, root, tree=None):
-        """
-        return the partial merkle tree where the root is the first ocurrence 
-        (top-bottom, left-right) of the `root` input in the `tree`.
+    def make_merkle_tree(self):
+        """Create the merkle tree based on the self.leaves"""
         
-        :input root: string | The hash of the node that will be the root of the partial tree.
-        :input tree: dict | The merkle tree. If None, will be used the self.tree.
-        
-        :return: dict | The partial merkle tree.
-        """
-        if tree == None:
-            tree = self.tree
-
-        # Uhul! We found.
-        if tree['key'] == root:
-            return tree
-
-        # In this case, tree['right'] is also None. Bad, We didn't find.
-        elif tree['left'] == None:
+        if self.is_ready:
+            print("The merkle tree already is done.")
             return None
-
-        # We still hope to find.
-        else:
-            # Search the left child tree
-            left_search = self.partial_merkle_tree(root, tree['left'])
-            if left_search != None:
-                return left_search
-
-            # if the root isn't in the left, search in the right child tree
-            else:
-                return self.partial_merkle_tree(root, tree['right'])
-
-    def get_leaves(self, tree, leaves=None):
-        """
-        Returns the leaves of a merkle tree.
         
-        Recursive function to get the leaves of a merkle tree.
+        leaves_hash = [string_to_sha256(leaf) for leaf in self.leaves]
+        
+        levels = []
+        current_level = leaves_hash
+        while len(current_level) > 1:
+            
+            current_level
+            levels = [current_level] + levels
+            
+            aux_current = current_level
+            current_level = []
+            while aux_current != []:
+                if len(aux_current) >= 2:
+                    node_children = aux_current[0:2]
+                    node_children.sort()
+                    node_hash = string_to_sha256(''.join(node_children))
+                    current_level.append(node_hash)
+                    aux_current = aux_current[2:]
+                else:
+                    current_level.append(aux_current[0])
+                    aux_current = []
+                    
+        self.root = current_level[0]
+        self.levels = [current_level] + levels
+        self.is_ready = True
+        
+    def verify_leaf(self, leaf, root):
         """
-
-        if leaves == None:
-            leaves = []
-
-        # It is a leaf!!!!! Uhul
-        if tree['left'] == None:
-            leaves.append(tree['key'])
-        else:
-            leaves = self.get_leaves(tree['left'], leaves)
-            leaves = self.get_leaves(tree['right'], leaves)
-
-        return leaves
-
-    def verify_leaf(self, leaf, merkle_root, tree=None, leaf_hash=False):
-        """
-        Verify if `leaf` is a leaf of the partial merkle tree `tree`, where the 
-        root is the first occurrence (top-bottom, left-right) of the `merkle_root`.
+        Verify if `leaf` is a leaf of merkle tree, which `root` is its root.
         
         :input leaf: string | the leaf string that will be verified.
-        :input merkle_root: hash string | hash of the node that will be considered root.
-        :input tree: dict | the merkle tree. If None, will be used the self.tree.
-        :input leaf_hash: bool | True if the `leaf` is a hash. False, otherwise.
-        
         :return: True if the leaf is in tree. False, otherwise.
         """
-        if tree == None:
-            tree = self.tree
-
-        if not leaf_hash:
-            leaf = self.__sha256_function__(leaf)
-        specific_tree = self.partial_merkle_tree(merkle_root, tree)
-        leaves = self.get_leaves(specific_tree)
-        if leaf in leaves:
-            return True
+        if self.is_ready:
+            if root == self.root and leaf in self.leaves:
+                    return True
         return False
+    
+    def delete_leaf(self, leaf):
+        """If `leaf` is in the merkle tree, then it is deleted."""
+        
+        if not self.is_ready:
+            print("The merkle tree was not builded. Please, run self.make_merkle_tree()")
+            return None
+        
+        if not self.verify_leaf(leaf, self.root):
+            print("The leaf is not in the tree.")
+            return None
+        
+        self.leaves.remove(leaf)
+        self.is_ready = False
+        self.make_merkle_tree()
 
 
 #  Added by Flavio  for testing
@@ -216,12 +119,6 @@ class TestMerkleTree(unittest.TestCase):
     def test_verify_leaves(self):
         mt = MerkleTree(test_leaves_even)
         r = mt.verify_leaf('casa', mt.root)
-    def test_join_trees(self):
-        mt = MerkleTree(test_leaves_even)
-        mt2 = MerkleTree(test_leaves_odd)
-        mtj = mt.join_trees()
-
 
 if __name__ == "__main__":
     unittest.main()
-
