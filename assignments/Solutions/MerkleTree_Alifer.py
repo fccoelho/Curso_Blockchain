@@ -17,7 +17,18 @@ class MerkleTree():
 
         self.leaves = [transactions]
         self.tree = self.make_merkle_tree(transactions)
-
+        
+    def root(self, tree=None):
+        """
+        Returns the merkle root of the `tree` input. If `tree` is None, will be
+        considered the self.tree.
+        """
+        
+        if tree == None:
+            tree = self.tree
+        
+        return tree['key']
+        
     @staticmethod
     def __sha256_function__(string):
 
@@ -218,14 +229,16 @@ class TestMerkleTree(unittest.TestCase):
         # self.assertListEqual(test_leaves_even, mt2.leaves)
         self.assertListEqual([test_leaves_even], mt2.leaves)
         
-#     def test_verify_leaves(self):
-#         mt = MerkleTree(test_leaves_even)
-#         r = mt.verify_leaf('casa', mt.root)
+    def test_verify_leaves(self):
+        mt = MerkleTree(test_leaves_even)
+        
+        # r = mt.verify_leaf('casa', mt.root)
+        r = mt.verify_leaf('casa', mt.root())
     
     def test_join_trees(self):
         mt = MerkleTree(test_leaves_even)
-#         mt2 = MerkleTree(test_leaves_odd)
-#         mtj = mt.join_trees(mt2)
+        #  mt2 = MerkleTree(test_leaves_odd)
+        #  mtj = mt.join_trees(mt2)
         mtj = mt.join_trees(test_leaves_odd)
 
 
