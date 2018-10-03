@@ -30,7 +30,7 @@ truffle init
 Then in order to install the Openzeppelin library, do:
 ```bash
 npm init -y 
-npm install -E zeppelin-solidity
+npm install -E openzeppelin-solidity
 ```
 
 `npm init -y` initializes the `package.json` file:
