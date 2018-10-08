@@ -64,6 +64,7 @@ Video lectures (in portuguese) are available on [Youtube](https://www.youtube.co
 - [Solidity Docs](http://solidity.readthedocs.io/en/latest/)
 - [py-EVM](https://github.com/ethereum/py-evm)
 - [Vyper](https://github.com/ethereum/vyper)
+- [Auditing smart-contracts](https://medium.com/@merunasgrincalaitis/how-to-audit-a-smart-contract-most-dangerous-attacks-in-solidity-ae402a7e7868)
 
 ### Byzantine Fault Tolerant Protocols
 
