@@ -11,4 +11,5 @@ Anyone using this course should use these lectures in the following order:
 1. [Solidity development environment](Solidity%20development%20environment.md)
 1. [Token Contracts](token-contracts.md)
 2. [Build an ICO](build-your-own-ICO.md)
-1. [Build a DApp](build-DApp-with-Webpack.md)
+1. [Build a DApp (Javascript)](build-DApp-with-Webpack.md)
+1. [Build a DApp (Python)](build-dapp-python.md)
