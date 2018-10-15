@@ -3,7 +3,7 @@ In this lecture we will start developing the frontend for our [ICO](build-your-o
 We will base the javascript frontend on the [Webpack box](https://github.com/truffle-box/webpack-box) provided by truffle. However, to make it work with our contracts we will modify the truffle box a little.
 
 ## Getting started
-We are going to use the latest version of Angular, which requires a reasonably modern version of Node. So start by updating your version of Node:
+We are going to use the latest version of Webpack, which requires a reasonably modern version of Node. So start by updating your version of Node:
 ```bash
 $ sudo npm cache clean -f
 $ sudo npm install -g n
