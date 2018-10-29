@@ -27,7 +27,7 @@ $ rm test
 ```
 Now we are left with just the frontend code. We will now edit the app code. Let's start by `app/scripts/index.js`
 it should be edited to become like below:
-```ecmascript 6
+```javascript
 // Import the page's CSS. Webpack will know what to do with it.
 import '../styles/app.css'
 
