@@ -207,3 +207,48 @@ contract('TokenSale', function ([_, investor, wallet, purchaser]) {
   });
 });
 ```
+The code above should be taken as a starting point. Study it until you are sure you understand all of its logic. The go ahead and evolve you contract and testing code in parallel. Remember to follow the TDD (test driven development) philosophy, and write your tests before you implement a new feature in your contract. Never let your tests get out of synch with your solidity code, because it can be very difficult find bug in contracts without good test coverage. Code in solidity is not easy to debug, so having abundant tests is you best tool to maintain code quality.
+
+## Interacting with your contracts from the Truffle console
+
+Once all your tests are passing and you are satisfied with the status of your contract(s), try as much as possible to interact with it from the `truffle console`. it will give you a better feel for its usability and will help you to have Ideas for the frontend of your ICO. First make sure you have deployed your contracts to the ganache-cli private blockchain by running `truffle migrate --network ganache`.
+
+```bash
+$ truffle console --network ganache
+```
+Once You are in the console, there are a number of things you can do. Basically you have at your disposal the [Web3 APIs](https://web3js.readthedocs.io/en/1.0/). For example we can start by listing the existing accounts so that we can use them when interacting with contracts. 
+
+```javascript
+truffle(ganache)> web3.eth.accounts
+[ '0x125efe506d1ab551ca7a54d06c094a61372bf0d3',
+  '0x9ebdc13306223334f346f38d76abc0b6c033618b',
+  '0xd87fadd4817d0a24a6e2bae34cabac16b302d7c1',
+  '0x43db49aaa397e67500468750e4ba2d81780e6fb2',
+  '0x42ec67ffa37c6637f8e3a26ff49096c96f14dda5',
+  '0x05bb580560ffb5772f2796bdfb9c13f283268d1a',
+  '0x1c6caeea77c1bd25a4325a95cde9ce0ff9f1266a',
+  '0x408ec8f87b41d03cf68cf293ddf66ae7a9b9a888',
+  '0xe19a3df16797bbc3288ce283f2127b3223407cc8',
+  '0xebfc14b4e10c118b9c8294ed0431c5bfc6e49f68' ]
+```
+You may also want to check the balance of Ether on one of these addresses:
+```javascript
+truffle(ganache)> web3.eth.getBalance('0x1c6caeea77c1bd25a4325a95cde9ce0ff9f1266a')
+BigNumber { s: 1, e: 20, c: [ 1000000 ] }
+truffle(ganache)> web3.eth.getBalance('0x1c6caeea77c1bd25a4325a95cde9ce0ff9f1266a').toNumber()
+100000000000000000000
+```
+Note that balances are given in units of `wei`, so the value above corresponds to a 100 Ethers (remember that 1 Ether=10**18 Wei)
+
+To get hold of an instance of our deployed contracts we can do this:
+```javascript
+truffle(ganache)> FunnyToken.deployed().then(instance => token = instance)
+truffle(ganache)> token.address
+'0x0a4b4c72ef0404f177e3e2b73cf38e4f5d8b87cb'
+truffle(ganache)> token.balanceOf('0x1c6caeea77c1bd25a4325a95cde9ce0ff9f1266a')
+BigNumber { s: 1, e: 0, c: [ 0 ] }
+```
+
+As seen above from the deployed instance of the contract, can interact with it freely. Hitting \<TAB> after a dot, allows us to introspect the object to see what functions or attributes can be invoked.
+
+## Deploying to a Live network
