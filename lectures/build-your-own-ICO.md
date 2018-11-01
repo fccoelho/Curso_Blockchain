@@ -251,4 +251,12 @@ BigNumber { s: 1, e: 0, c: [ 0 ] }
 
 As seen above from the deployed instance of the contract, can interact with it freely. Hitting \<TAB> after a dot, allows us to introspect the object to see what functions or attributes can be invoked.
 
+One interesting task to perform in this initial interactions with our ICO contracts, is to use the `TokenSale` contract to buy tokens. For that we need to get a hold of an instance of that contract. we'll do that the same way we did for the `FunnyToken` contract.
+
+```javascript
+truffle(ganache)> TokenSale.deployed().then(instance => sale = instance)
+```
+
+But in order to know what to expect, we need to understand how the conversion rate between Ether and our token works. We already know the the smallest unit of Ether is the Wei and that `1 Eth = 10^18 Wei`, now we have to remember that the same will apply to our token. So if we call its smallest subdivision, say, a `laugh`, then for every Funny we will have `10^(decimals) laughs` or `10^18 laughs`. So for example we want to set the price of a Funny token to 1 Ether, since we have the same subdivision, the rate will be 1. For a more detailed explanation [read this](https://openzeppelin.org/api/docs/learn-about-crowdsales.html)
+
 ## Deploying to a Live network
