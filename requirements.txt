@@ -4,3 +4,4 @@ coincurve
 bitcoin
 pycryptodome
 web3
+ed25519
