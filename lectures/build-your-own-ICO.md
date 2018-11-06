@@ -257,6 +257,17 @@ One interesting task to perform in this initial interactions with our ICO contra
 truffle(ganache)> TokenSale.deployed().then(instance => sale = instance)
 ```
 
-But in order to know what to expect, we need to understand how the conversion rate between Ether and our token works. We already know the the smallest unit of Ether is the Wei and that `1 Eth = 10^18 Wei`, now we have to remember that the same will apply to our token. So if we call its smallest subdivision, say, a `laugh`, then for every Funny we will have `10^(decimals) laughs` or `10^18 laughs`. So for example we want to set the price of a Funny token to 1 Ether, since we have the same subdivision, the rate will be 1. For a more detailed explanation [read this](https://openzeppelin.org/api/docs/learn-about-crowdsales.html)
+But in order to know what to expect, we need to understand how the conversion rate between Ether and our token works. We already know the the smallest unit of Ether is the Wei and that `1 Eth = 10^18 Wei`, now we have to remember that the same will apply to our token. So if we call its smallest subdivision, say, a `laugh`, then for every Funny we will have `10^(decimals) laughs` or `10^18 laughs`. So for example we want to set the price of a Funny token to 1 Ether, since we have the same subdivision, the rate will be 1. For a more detailed explanation [read this](https://openzeppelin.org/api/docs/learn-about-crowdsales.html).
 
 ## Deploying to a Live network
+The first challenge we have to face when moving into this phase of the project is setting up a connection with a live ethereum testnet. Yes, there are more than one to choose from. and your choice will depend on [a number of factors](https://web3py.readthedocs.io/en/stable/node.html?highlight=infura).
+
+![deployment](eth_deployment.jpg)
+
+We already are familiar with the ganache local blockchain and the workflow to deploy on a Live testnet wont be much different. We will work with the choices highlighted in the figure above.
+
+One of the main differences from the way we worked so far, is that now we will have to setup a wallet manually instead of having our Ethereun node create it for us. For that, we will use [Metamask](https://metamask.io/). Metamask is a browser extension which will serve as a wallet for this purpose. 
+
+The second step is to [obtain ether] for our transactions. Since we are on a testnet, we can get ether from the so-called Faucets, which are websites which distribute test ethers to anyone who needs some. Metamask runs their own [faucet](https://faucet.metamask.io/). Go there (after having setup your wallet with metamask) and get some ether. 
+
+The third step will be to go to [Infura](https://infura.io) and get ourselves an [API key](https://infura.io/docs/gettingStarted/chooseaNetwork) for the Ropstein network.  
