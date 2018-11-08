@@ -271,3 +271,50 @@ One of the main differences from the way we worked so far, is that now we will h
 The second step is to [obtain ether] for our transactions. Since we are on a testnet, we can get ether from the so-called Faucets, which are websites which distribute test ethers to anyone who needs some. Metamask runs their own [faucet](https://faucet.metamask.io/). Go there (after having setup your wallet with metamask) and get some ether. 
 
 The third step will be to go to [Infura](https://infura.io) and get ourselves an [API key](https://infura.io/docs/gettingStarted/chooseaNetwork) for the Ropstein network.  
+
+Once you complete these three steps, it's time to begin modifying our code to enable deplyment to the `Ropstein` testnet.
+
+The first thing we will need is to install an additional truffle package to interact with the Metamask wallet.
+
+```bash
+$ npm install truffle-hdwallet-provider
+```
+
+Then we can proceed to create an entry for the `Ropstein` network in our `truffle.js` file
+
+```javascript
+var HDWalletProvider = require("truffle-hdwallet-provider");
+var infura_apikey = "Your Infura key here"; // Get yours at https://infura.io/signup. It's free.
+var mnemonic = "<REPLACE THIS WITH YOUR METAMASK SEED PHRASES>";
+
+module.exports = {
+  networks: {
+    development: {
+      host: "localhost",
+      port: 8545,
+      gas: 6500000,
+      network_id: "*"
+    },
+    ropsten:  {
+      provider: new HDWalletProvider(mnemonic, "https://ropsten.infura.io/" + infura_apikey),
+      network_id: 3,
+      gas: 4500000
+    }
+  }
+};
+```
+You are now ready to deploy to `Ropstein`. Make sure you have ether on your wallet, and try:
+
+```bash
+$ truffle migrate --network ropstein
+```
+After a while, you will see output in your terminal very similar to the one you got in the local network.
+It takes a while because now you are reaching out to a remote node, and you have to wait for the transactions to be mined befor you get back the address of the contracts published.
+You should take notice of the addresses, so that you can find and interact with them later. But this information is also saved in the contract artifacts in the build directory.
+
+Now You can run the tests in ropstein, but be aware that they will cost you Ether (fake Ether, but still you should have enough on your wallet)). Another alternative is to open a truffle console directly on the ropstein network.
+
+But The easiest way to test the contract is to send it one Ether and see if the sale works. How? just open Metamask and send the Ether to the sale address you wrote down after the deployment.
+
+To check on you token balance, just go to Metamask, select `Tokens` , `add Token` and paster the Token contract address.
+You should now see your FunnyToken balance. 
