@@ -195,3 +195,9 @@ $ npm run dev
 ``` 
 If everything goes well, point your browser to [localhost:8080](http://localhost:8080) to see your app. 
 
+## Supporting both Development, Testing and Production blockchains
+One thing web developers learn very quickly is how to maintain different configurations for both the development and production environments. It is very important to maintain function configuration for the development environments even after we go into production with our web app because we will always need a safe environment in which to test new feature without the risk of breaking the public website.
+
+In our ICO DApp project, we will have three environments to cater to: the development, the Testnet (Ropsten), and the Main Ethereum network (mainnet). On top of that, we have two environments for running the web app: local development machine and production server. That gives us 6 different configuration sets to maintain.
+
+Regarding the Blockchain configurations, we need to configure our ethereum providers using web3, luckily it is not much different than what we've already done to connect to our local private blockchain.

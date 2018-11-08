@@ -77,3 +77,30 @@ For this to Work, we will also need the `index.html` template: If you are not fa
 </html>
 ```
 The template will reside in a `templates` directory in the same directory as our `DApp.py`. we will also need a static directory which will serve other types of files such as CSS, and JS. Notice, that we are using a [javascript library](https://github.com/jeromeetienne/jquery-qrcode) to render QR codes.
+
+## Supporting both Development, Testing and Production blockchains
+One thing web developers learn very quickly is how to maintain different configurations for both the development and production environments. It is very important to maintain function configuration for the development environments even after we go into production with our web app because we will always need a safe environment in which to test new feature without the risk of breaking the public website.
+
+In our ICO DApp project, we will have three environments to cater to: the development, the Testnet (Ropsten), and the Main Ethereum network (mainnet). On top of that, we have two environments for running the web app: local development machine and production server. That gives us 6 different configuration sets to maintain.
+
+Regarding the Blockchain configurations, we need to configure our ethereum providers using web3, luckily it is not much different than what we've already done to connect to our local private blockchain.
+
+With [Web3.py](https://web3py.readthedocs.io/en/stable/node.html?highlight=infura), we have builtin support to help us connect to **Infura**. Then we will have the issue of connecting the wallet we created with Metamask to our frontend in case we want to operate from the same wallet. `Web3.py` can [help us here](https://web3py.readthedocs.io/en/stable/troubleshooting.html#use-metamask-accounts) as well. But keep in mind that this is not necessary, because it's very easy to use `Web3.py` to create a new account and then transfer Ether from our Metamask account to that new account. 
+
+To configure Infura as a Ethereum provider we can use the built-in [Infura auto-initializer](https://web3py.readthedocs.io/en/stable/providers.html#auto-initialization-provider-shortcuts). First we need to make sure we have an environment variable  with our Infura API key. This can be simply done on a terminal:
+
+```bash
+$ export INFURA_API_KEY=YourApiKey
+```
+Then everything should just work from within your Flask app
+```python
+from web3.auto.infura import w3
+# Check connection
+try: 
+    assert w3.isConnected()
+except AssertionError:
+    print("Connection to Infura node failed.")
+```
+
+### Managing Development and Production settings in Flask
+
