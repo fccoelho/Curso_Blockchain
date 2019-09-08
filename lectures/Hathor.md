@@ -68,6 +68,7 @@ GPU mining is much faster, on my laptop, with a NVDIA GEFORCE MX150, I got 155 M
 ![hathor wallet](hathorwallet.png)
  
  ## Creating a new Token
- In order to create a new token you must have some Hathor in your wallet that's why I showed you how to mine first.
- 
+ In order to create a new token you must have some Hathor in your wallet that's why I showed you how to mine first. Assuming You have managed to mine a few hathors, you can go to the custom Tokens menu on the hathor wallet, enter the name and symbol of the toke you want to create, as well as the amount of tokens. Like I did:
+ ![flaviotoken](flaviotoken.png)
+ Once you do it, you new tokens show up on you wallet's ballance.
  
