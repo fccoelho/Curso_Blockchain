@@ -64,8 +64,9 @@ Then, after the compilation finishes you are ready to start mining:
 ```bash
 $ ./ccminer -a sha256d -o stratum+tcp://stratum.node5.alpha.testnet.hathor.network:8081 --coinbase-addr {address}
 ```
-GPU mining is much faster, on my laptop, with a NVDIA GEFORCE MX150, I got 155 MH/s(Mega hashes per second).
+GPU mining is much faster, on my laptop, with a NVDIA GEFORCE MX150, I got 155 MH/s(Mega hashes per second). After about 5 minutes of mining with ccminer I had already mined my first block and got 20 hathor as a reward.
  
  ## Creating a new Token
  In order to create a new token you must have some Hathor in your wallet that's why I showed you how to mine first.
+ 
  
