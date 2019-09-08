@@ -8,6 +8,11 @@ Throughout this lecture we will learn how to:
  - Set up you box to mine Hathors;
  - Create a new token 
  
+## Setting up a Hathor Wallet
+The Hathor wallet is realy easy to install. You can find an appropriate download for your operating system [here](https://hathor.network/get-started/). Just download and follow the instructions. 
+ 
+
+ 
 ## Start mining Hathors!
 In order to start mining you first need to download the source code of the mining daemon and compile it locally. So far I have not found a pre-compiled miner ready for download and use. But compiling is not too complicated. Here I'll assume you will be doing it on an Ubuntu linux box like I did. Let's start with the [cpuminer](https://github.com/HathorNetwork/cpuminer). First clone the source code.
 
@@ -47,3 +52,20 @@ After the compilation is done, you are ready to start mining! But you still need
  $ ./minerd -a sha256d -o stratum+tcp://stratum.node5.alpha.testnet.hathor.network:8081 --coinbase-addr {address}
  ```
  replace `{address}` with you address.
+ 
+ ### Building the GPU miner(ccminer)
+ I you have an cuda-capable NVIDIA GPU on your box, it may be worth trying the GPU miner:
+Start by downloading the source code from [here](https://github.com/HathorNetwork/ccminer).
+Then build it like this:
+```bash
+$ ./build.sh
+```
+Then, after the compilation finishes you are ready to start mining:
+```bash
+$ ./ccminer -a sha256d -o stratum+tcp://stratum.node5.alpha.testnet.hathor.network:8081 --coinbase-addr {address}
+```
+GPU mining is much faster, on my laptop, with a NVDIA GEFORCE MX150, I got 155 MH/s(Mega hashes per second).
+ 
+ ## Creating a new Token
+ In order to create a new token you must have some Hathor in your wallet that's why I showed you how to mine first.
+ 
