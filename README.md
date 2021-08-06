@@ -17,8 +17,9 @@ Video lectures (in portuguese) are available on [Youtube](https://www.youtube.co
 
 | date       | conteúdo |
 | ---------- | -------- |
-| 2018-08-02 | leitura prévia do *white paper* para a aula (ver bibliografia) |
-| 2018-08-09 | leitura prévia do paper [Raft](https://raft.github.io/raft.pdf) |
+| 2021-08-13 | leitura prévia do [*white paper*](https://bitcoin.org/bitcoin.pdf) do Bitcoin, para a aula. |
+| 2021-08-20 | leitura prévia do paper [A Survey of Distributed Consensus Protocols for Blockchain Networks
+](https://arxiv.org/abs/1904.04098) |
 
 ## Sylabus
 
