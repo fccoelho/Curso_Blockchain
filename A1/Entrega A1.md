@@ -11,3 +11,14 @@ Pontos a incluir no relatório:
  6. Descever regras para emissão da criptomoeda e se é inflacionária ou não.
  7. Descrever potencial para interoperabilidade com outras blockchains.
  8. A blockchain dá suporte a smart-contracts ou outras aplicações específicas além de servir de base para uma criptomoeda?
+
+ ## Entrega
+ A entrega será por meio de pull-request para o site, neste diretório.
+ 
+  - faça um fork do repositório do curso
+  - Crie um arquivo denominado `<nome da blockchain>_<seu nome completo>.md` neste diretório, em seu fork.
+  - Escreva o seu relatório neste arquivo.
+  - Faça um pull-request para o repositório do curso com seu relatório.
+
+Os Pull-requests serão aceitos para correção no último dia da semana da A1.
+
