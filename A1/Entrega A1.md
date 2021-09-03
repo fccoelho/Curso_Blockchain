@@ -1,4 +1,4 @@
-# Detalhamanto da Entrega da A1 2021.2
+# Detalhamento da Entrega da A1 2021.2
 A Nota da A1 vai se basear na apresentação feita sobre a criptomoeda de escolha, e relatório em markdown correspondente
 
 Pontos a incluir no relatório:
@@ -11,6 +11,8 @@ Pontos a incluir no relatório:
  6. Descever regras para emissão da criptomoeda e se é inflacionária ou não.
  7. Descrever potencial para interoperabilidade com outras blockchains.
  8. A blockchain dá suporte a smart-contracts ou outras aplicações específicas além de servir de base para uma criptomoeda?
+
+A nota será dada considerando a inclusão dos pontos acima no relatório.
 
  ## Entrega
  A entrega será por meio de pull-request para o site, neste diretório.
