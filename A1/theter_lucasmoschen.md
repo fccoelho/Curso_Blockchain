@@ -32,10 +32,14 @@ XXX: Como funciona a anonimidade e privacidade para a moeda
 XXX: descrever como funciona a prova de reservas 
 XXX: como funciona na prática. 
 
+## Falhas de implementação e melhorias futuras
+
 ## Outras características 
 
 XXX: interoperabilidade com outras blockchains? 
 XXX: suporte a smart-contracts
+
+## Críticas e Controvérsias 
 
 
 ## Referências 
