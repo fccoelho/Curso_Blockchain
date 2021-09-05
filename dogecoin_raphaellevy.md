@@ -29,17 +29,18 @@ Em 2021, o valor da Dogecoin disparou mais uma vez, aumentando seu valor em 5.00
 
 Isso porque a Dogecoin é o competidor "mais forte" entre as criptomoedas para uso como forma de pagamento, e que, apesar de seu suprimento ilimitado e ter menos valor no mercado, a Dogecoin é a moeda que as pessoas realmente usam em transações, diferente da Bitcoin e da Ethereum. [9]
 
-Apesar desses benefícios, embora Dogecoin não consiga interagir com smart-contarcts diretamente, já que opera na própria cadeia, a moeda pode ser "embrulhada" de forma que possa ser interoperável com um contrato até que ele seja lançado. [10]
+Apesar desses benefícios, embora a Dogecoin não consiga interagir com smart-contracts diretamente, já que opera na própria cadeia, a moeda pode ser "embrulhada" de forma que possa ser interoperável com um contrato até que ele seja lançado. [10]
 
+A Dogecoin não é completamente anônima, devido ao armazenamento de informações sobre movimentações da moeda nas blockchains, onde cada pessoa tem um "endereço" único de "carteira". Assim, embora seja bem improvável que o usuário seja relacionado a um código de carteira específico, isso não é impossível. Dessa forma, a melhor forma de comprar Doge anonimamente seria através de trocas P2P ("peer-to-peer"), bancos de criptomoedas ou trocas diretas. [11] 
 
 <h4>Curiosidades:</h4>
-1. O Burger King recentemente começou a aceitar pagamento em dogecoin para promover seu novo biscoito pra cães (Dogpper); [11]
+1. O Burger King recentemente começou a aceitar pagamento em dogecoin para promover seu novo biscoito pra cães (Dogpper); [12]
 
 
-2. Foram usadas no investimento em massa nas ações da GameStop, que elevaram seu valor em 400% e "quebrando" os fundos que apostavam na quebra da empresa; [12]
+2. Foram usadas no investimento em massa nas ações da GameStop, que elevaram seu valor em 400% e "quebrando" os fundos que apostavam na quebra da empresa; [13]
 
 
-3. A Dogecoin será a primeira criptomoeda a pousar na Lua em 2022, em uma missão da SpaceX paga totalmente em Doge. A missão DOGE-1 visa lançar um satélite com o objetivo de "obter inteligência espacial lunar com sensores, câmeras, comunicações integradas e sistemas computacionais”. [13]
+3. A Dogecoin será a primeira criptomoeda a pousar na Lua em 2022, em uma missão da SpaceX paga totalmente em Doge. A missão DOGE-1 visa lançar um satélite com o objetivo de "obter inteligência espacial lunar com sensores, câmeras, comunicações integradas e sistemas computacionais”. [14]
 
 
 
@@ -83,19 +84,23 @@ https://livecoins.com.br/mark-cuban-dogecoin-melhor-cripto-meio-troca/
 Dogecoin.
 https://en.wikipedia.org/wiki/Dogecoin
 
-[11] Tecnoblog. 
+[11]Invezz.
+How to buy Dogecoin anonymously without ID.
+https://invezz.com/cryptocurrency/dogecoin/buy/anonymously-without-id/#is-dogecoin-anonymous
+
+[12] Tecnoblog. 
 Burger King aceita pagamento em dogecoin para promover snack canino. 
 https://tecnoblog.net/467492/burger-king-aceita-pagamento-em-dogecoin-para-promover-snack-canino/
 
-[12] Investing.com. 
+[13] Investing.com. 
 Confira os 6 fatos históricos da Dogecoin, a queridinha da comunidade. 
 https://br.investing.com/news/cryptocurrency-news/confira-os-6-fatos-historicos-da-dogecoin-a-queridinha-da-comunidade-827278
 
-[13] Space.com. 
+[14] Space.com. 
 SpaceX will launch a moon mission funded by Dogecoin in 2022. 
 https://www.space.com/spacex-dogecoin-moon-mission
 
-[14] Dogecoin Website.
+[15] Dogecoin Website.
 https://dogecoin.com/
 
 
