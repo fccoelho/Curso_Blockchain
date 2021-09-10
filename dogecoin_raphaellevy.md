@@ -5,6 +5,8 @@
 
 A Dogecoin é uma criptomoeda criada em dezembro de 2013 pelos programadores Billy Marcus e Jackson Palmer como uma sátira à Bitcoin, usando como nome e logo o meme 'Doge' da internet, a Dogecoin é uma criptomoeda open-source com tecnologia derivada da Litecoin, e está nas top 10 criptomoedas mais utilizadas atualmente. [1] 
 
+Whitepaper e website da Dogecoin podem ser encontrados respectivamente em [6] e [17].
+
 Assim como a Bitcoin e outras criptomoedas, a Dogecoin utiliza da tecnologia de Blockchains para distribuição e armazenamento de registros sobre as transações realizadas. [2] [3]
 
 Para comprar a moeda hoje em dia, é preciso que você crie um fundo com uso de dólares ou outras criptomoedas, e depois de comprar, o melhor a se fazer é colocar as Dogecoins compradas em uma espécie de "carteira", que é possível proteger gerando uma senha privada para ela. [2]
@@ -23,7 +25,7 @@ Além de ter um tempo de mineração 10 vezes mais rápido que o da Bitcoin, é 
 
 (Limite de Tamanho do Bloco)/((Menor Tamanho Possível de Transação) x (Tempo de mineração (s))) &#8594; (1024x 1024)/(257 x 60 x 1) = 68
 
-Assim, a Dogecoin é capaz de realizar aproximadamente 70 transações por segundo se não houverem problemas de rede, nesse caso sendo capaz de realizar aproximadamente 40 transações por segundo. [8]
+Assim, a Dogecoin é capaz de realizar aproximadamente 70 transações por segundo se não houverem problemas de rede, nesse caso sendo capaz de realizar aproximadamente 40 transações por segundo. Por via de curiosidade, a Dogecoin também é capaz de realizar transações 10 vezes mais rápido que a Bitcoin, que consegue realizar 6.8 transações por segundo (ambas tem o mesmo tamanho de bloco limite e menor tamanho possível de transação). [8]
 
 A Dogecoin, diferente de moedas como a Bitcoin, é uma moeda "inflacionária", ou seja, já que seu estoque é ilimitado, é possível que a sua demanda decaia ao longo do tempo, e consequentemente seu valor no mercado. Mais precisamente, são constantemente geradas 10.000 dogecoins por minuto. [9] [10]
 
@@ -31,11 +33,9 @@ A Dogecoin, diferente de moedas como a Bitcoin, é uma moeda "inflacionária", o
 
 Após sua criação, entusiastas da criptomoeda organizaram campanhas publicitárias para elevar sua visibilidade, tendo sido incluída em uma bolha de criptomoedas em 2017, que elevou o valor das moedas contidas nela. Porém, após o estouro desta bolha em 2018, as moedas, incluindo a Dogecoin, perderam muito desse valor. Ainda assim, a Dogecoin tinha fiéis seguidores que usavam a moeda como "gorjeta" para conteúdos em redes sociais. [4]
 
-Em 2021, o valor da Dogecoin disparou mais uma vez, aumentando seu valor em 5.000%, e um de seus maiores propulsores foi o CEO da companhia Tesla, Elon Musk, que ainda afirmou considerar a Dogecoin sua criptomoeda preferida. Além disso, Musk, junto com o bilionário Mark Cuban, acreditam que a Dogecoin é a melhor meoda em termos de "meio de troca" no mercado. 
+Em 2021, o valor da Dogecoin disparou mais uma vez, aumentando seu valor em 5.000%, e um de seus maiores propulsores foi o CEO da companhia Tesla, Elon Musk, que ainda afirmou considerar a Dogecoin sua criptomoeda preferida. Além disso, Musk, junto com o bilionário Mark Cuban, acreditam que a Dogecoin é a melhor moeda em termos de "meio de troca" no mercado. Isso porque a Dogecoin é o competidor "mais forte" entre as criptomoedas para uso como forma de pagamento, e que, apesar de seu suprimento ilimitado e ter menos valor no mercado, a Dogecoin é uma moeda que as pessoas realmente usam em transações, diferente da Bitcoin e da Ethereum. [11]
 
-Isso porque a Dogecoin é o competidor "mais forte" entre as criptomoedas para uso como forma de pagamento, e que, apesar de seu suprimento ilimitado e ter menos valor no mercado, a Dogecoin é a moeda que as pessoas realmente usam em transações, diferente da Bitcoin e da Ethereum. [11]
-
-Apesar desses benefícios, embora a Dogecoin não consiga interagir com smart-contracts diretamente, já que opera na própria cadeia, a moeda pode ser "embrulhada" de forma que possa ser interoperável com um contrato até que ele seja lançado. [12]
+Apesar desses benefícios, embora a Dogecoin não consiga interagir com smart-contracts diretamente já que opera em uma cadeia própria, a moeda pode ser "embrulhada" de forma que possa ser interoperável com um contrato até que ele seja lançado. [12]
 
 A Dogecoin não é completamente anônima, devido ao armazenamento de informações sobre movimentações da moeda nas blockchains, onde cada pessoa tem um "endereço" único de "carteira". Assim, embora seja bem improvável que o usuário seja relacionado a um código de carteira específico, isso não é impossível. Dessa forma, a melhor forma de comprar Doge anonimamente seria através de trocas P2P ("peer-to-peer"), bancos de criptomoedas ou trocas diretas. [13] 
 
