@@ -35,7 +35,7 @@ Video lectures (in portuguese) are available on [Youtube](https://www.youtube.co
 8. The Ethereum platform and *smart contracts*.
 9. Ethereum: White e Yellow paper
 1. Understanding [Ethereum usage of Merkle Trees](https://blog.ethereum.org/2015/11/15/merkling-in-ethereum/)
-10. [Desenvolvendo](/lectures/ethereum_dev.md) Aplicações na plataforma Ethereum
+10. [Desenvolvendo](/lectures/Lecture 2 - ethereum_dev.md) Aplicações na plataforma Ethereum
 11. Introduction to the [Solidity Language](/lectures/Solidity.md)
 12. Developing smart contracts: [Open-zeppelin](https://openzeppelin.org/).
 1. Interacting with contracts from [Javascript](https://web3js.readthedocs.io/en/1.0/) and [Python](https://web3py.readthedocs.io/en/stable/).

@@ -1,5 +1,5 @@
 # Building a DApp with Webpack
-In this lecture we will start developing the frontend for our [ICO](build-your-own-ICO.md).
+In this lecture we will start developing the frontend for our [ICO](Lecture 6 - build-your-own-ICO.md).
 We will base the javascript frontend on the [Webpack box](https://github.com/truffle-box/webpack-box) provided by truffle. However, to make it work with our contracts we will modify the truffle box a little.
 
 ## Getting started

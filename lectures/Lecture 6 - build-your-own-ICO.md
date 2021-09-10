@@ -7,14 +7,14 @@ ICOs (Initial Coin Offerings) are (still) a dominating phenomenon in the smart-c
  
  ## The contracts
 An ICO needs at least two contracts: *the token contract* and a *crowdsale* contract to sell the tokens.
-For this exercise we will use a basic ERC20 contract whichwe have already studied on a [previous lecture](token-contracts.md).
+For this exercise we will use a basic ERC20 contract whichwe have already studied on a [previous lecture](Lecture%205%20-%20token-contracts.md).
 
 We will also develop a crowdsale contract and for that we will start from the template [made available](https://github.com/OpenZeppelin/openzeppelin-solidity/blob/master/contracts/crowdsale/Crowdsale.sol) from the OpenZeppelin project. 
 
 ## Setting up the project
 For this project we will use the Truffle framework. We will work step-by-step here in this setup, however if you wish to learn more please check out [this video](https://www.youtube.com/watch?v=Zwc98_AvQ2Y).
 
-First let's install the basic software. I'll assume that if you are following this course you will already have installed nodejs and Ganache on your computer. If you have not, please follow the instructions on [this lecture](Solidity%20development%20environment.md).
+First let's install the basic software. I'll assume that if you are following this course you will already have installed nodejs and Ganache on your computer. If you have not, please follow the instructions on [this lecture](Lecture%204%20-%20Solidity%20development%20environment.md).
 
 the following command will install Truffle:
 ```bash
@@ -324,4 +324,4 @@ To check on you token balance, just go to Metamask, select `Tokens` , `add Token
 You should now see your FunnyToken balance. 
 
 ## Deploying The frontend(s)
-Now that we have our contracts running live in *the wild*, All we need is to deploy our frontend web apps to help non-techies interact with our token sale and start buying our tokens. The technical steps required to adapt our web apps to the new contracts will be described in the respective lectures for the [Python](build-dapp-python.md) and [Node](build-DApp-with-Webpack.md) frontends.
+Now that we have our contracts running live in *the wild*, All we need is to deploy our frontend web apps to help non-techies interact with our token sale and start buying our tokens. The technical steps required to adapt our web apps to the new contracts will be described in the respective lectures for the [Python](Lecture 7 - build-dapp-python.md) and [Node](Lecture 8 - build-DApp-with-Webpack.md) frontends.
