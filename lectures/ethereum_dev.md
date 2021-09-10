@@ -26,7 +26,7 @@ Caso voce prefira rodar um cliente ethereum a partir de uma imagem docker, siga 
 
 ## Iniciando uma rede privada
 
-O promeiro passo no estabelecimento de uma rede privada é a criação de um bloco "Genesis".
+O primeiro passo no estabelecimento de uma rede privada é a criação de um bloco "Genesis".
 
 Para isso precisamos criar, no diretório de dados da nossa rede privada um arquivo json com o seguinte conteudo:
 ```JSON
