@@ -19,7 +19,13 @@ De fato, a moeda usa uma versão simplificada da função de derivação de chav
 
 Recompensas atuais da Dogecoin. [7]
 
-A Dogecoin, diferente de moedas como a Bitcoin, é uma moeda "inflacionária", ou seja, já que seu estoque é ilimitado, é possível que a sua demanda decaia ao longo do tempo, e consequentemente seu valor no mercado. [8]
+Além de ter um tempo de mineração 10 vezes mais rápido que o da Bitcoin, é possível calcular a quantidade de transações por segundo através da fórmula:
+
+(Limite de Tamanho do Bloco)/((Menor Tamanho Possível de Transação) x (Tempo de mineração (s))) &#8594; (1024x 1024)/(257 x 60 x 1) = 68
+
+Assim, a Dogecoin é capaz de realizar aproximadamente 70 transações por segundo se não houverem problemas de rede, nesse caso sendo capaz de realizar aproximadamente 40 transações por segundo. [8]
+
+A Dogecoin, diferente de moedas como a Bitcoin, é uma moeda "inflacionária", ou seja, já que seu estoque é ilimitado, é possível que a sua demanda decaia ao longo do tempo, e consequentemente seu valor no mercado. Mais precisamente, são constantemente geradas 10.000 dogecoins por minuto. [9] [10]
 
 <img src="https://investorplace.com/wp-content/uploads/2021/02/2-6-21-supply-of-dogecoin-over-next-200-years-hake.png" alt="Dogecoin Has An Inflationary Supply, Making It Ideal As a Cryptocurrency |  InvestorPlace" jsname="HiaYvf" jsaction="load:XAeZkd;" class="n3VNCb" data-noaft="1" style="width: 433px; height: 260.684px; margin: 6.60816px 0px;">
 
@@ -27,20 +33,20 @@ Após sua criação, entusiastas da criptomoeda organizaram campanhas publicitá
 
 Em 2021, o valor da Dogecoin disparou mais uma vez, aumentando seu valor em 5.000%, e um de seus maiores propulsores foi o CEO da companhia Tesla, Elon Musk, que ainda afirmou considerar a Dogecoin sua criptomoeda preferida. Além disso, Musk, junto com o bilionário Mark Cuban, acreditam que a Dogecoin é a melhor meoda em termos de "meio de troca" no mercado. 
 
-Isso porque a Dogecoin é o competidor "mais forte" entre as criptomoedas para uso como forma de pagamento, e que, apesar de seu suprimento ilimitado e ter menos valor no mercado, a Dogecoin é a moeda que as pessoas realmente usam em transações, diferente da Bitcoin e da Ethereum. [9]
+Isso porque a Dogecoin é o competidor "mais forte" entre as criptomoedas para uso como forma de pagamento, e que, apesar de seu suprimento ilimitado e ter menos valor no mercado, a Dogecoin é a moeda que as pessoas realmente usam em transações, diferente da Bitcoin e da Ethereum. [11]
 
-Apesar desses benefícios, embora a Dogecoin não consiga interagir com smart-contracts diretamente, já que opera na própria cadeia, a moeda pode ser "embrulhada" de forma que possa ser interoperável com um contrato até que ele seja lançado. [10]
+Apesar desses benefícios, embora a Dogecoin não consiga interagir com smart-contracts diretamente, já que opera na própria cadeia, a moeda pode ser "embrulhada" de forma que possa ser interoperável com um contrato até que ele seja lançado. [12]
 
-A Dogecoin não é completamente anônima, devido ao armazenamento de informações sobre movimentações da moeda nas blockchains, onde cada pessoa tem um "endereço" único de "carteira". Assim, embora seja bem improvável que o usuário seja relacionado a um código de carteira específico, isso não é impossível. Dessa forma, a melhor forma de comprar Doge anonimamente seria através de trocas P2P ("peer-to-peer"), bancos de criptomoedas ou trocas diretas. [11] 
+A Dogecoin não é completamente anônima, devido ao armazenamento de informações sobre movimentações da moeda nas blockchains, onde cada pessoa tem um "endereço" único de "carteira". Assim, embora seja bem improvável que o usuário seja relacionado a um código de carteira específico, isso não é impossível. Dessa forma, a melhor forma de comprar Doge anonimamente seria através de trocas P2P ("peer-to-peer"), bancos de criptomoedas ou trocas diretas. [13] 
 
 <h4>Curiosidades:</h4>
-1. O Burger King recentemente começou a aceitar pagamento em dogecoin para promover seu novo biscoito pra cães (Dogpper); [12]
+1. O Burger King recentemente começou a aceitar pagamento em dogecoin para promover seu novo biscoito pra cães (Dogpper); [14]
 
 
-2. Foram usadas no investimento em massa nas ações da GameStop, que elevaram seu valor em 400% e "quebrando" os fundos que apostavam na quebra da empresa; [13]
+2. Foram usadas no investimento em massa nas ações da GameStop, que elevaram seu valor em 400% e "quebrando" os fundos que apostavam na quebra da empresa; [15]
 
 
-3. A Dogecoin será a primeira criptomoeda a pousar na Lua em 2022, em uma missão da SpaceX paga totalmente em Doge. A missão DOGE-1 visa lançar um satélite com o objetivo de "obter inteligência espacial lunar com sensores, câmeras, comunicações integradas e sistemas computacionais”. [14]
+3. A Dogecoin será a primeira criptomoeda a pousar na Lua em 2022, em uma missão da SpaceX paga totalmente em Doge. A missão DOGE-1 visa lançar um satélite com o objetivo de "obter inteligência espacial lunar com sensores, câmeras, comunicações integradas e sistemas computacionais”. [16]
 
 
 
@@ -72,35 +78,43 @@ https://coinnws.com/dogecoin-whitepaper/
 Dogecoin. 
 https://en.bitcoinwiki.org/wiki/Dogecoin
 
-[8] Medium. 
+[8] ProVsCons.
+Is Dogecoin Faster Than Bitcoin?
+https://provscons.com/is-dogecoin-faster-than-bitcoin/
+
+[9] Medium. 
 Understanding inflationary and deflationary effects of coin supply. 
 https://medium.com/@silvestrimichela.s/understanding-inflationary-and-deflationary-effects-of-coin-supply-34fcb9b2c219
 
-[9] Livecoins. 
+[10] Gitconnected.
+What is the Dogecoin Blockchain.
+https://levelup.gitconnected.com/what-is-the-dogecoin-blockchain-65de0d9d5ac3
+
+[11] Livecoins. 
 Bilionário Mark Cuban diz que Dogecoin é a melhor criptomoeda como meio de troca, Musk concorda. 
 https://livecoins.com.br/mark-cuban-dogecoin-melhor-cripto-meio-troca/
 
-[10] Wikipedia.
+[12] Wikipedia.
 Dogecoin.
 https://en.wikipedia.org/wiki/Dogecoin
 
-[11]Invezz.
+[13]Invezz.
 How to buy Dogecoin anonymously without ID.
 https://invezz.com/cryptocurrency/dogecoin/buy/anonymously-without-id/#is-dogecoin-anonymous
 
-[12] Tecnoblog. 
+[14] Tecnoblog. 
 Burger King aceita pagamento em dogecoin para promover snack canino. 
 https://tecnoblog.net/467492/burger-king-aceita-pagamento-em-dogecoin-para-promover-snack-canino/
 
-[13] Investing.com. 
+[15] Investing.com. 
 Confira os 6 fatos históricos da Dogecoin, a queridinha da comunidade. 
 https://br.investing.com/news/cryptocurrency-news/confira-os-6-fatos-historicos-da-dogecoin-a-queridinha-da-comunidade-827278
 
-[14] Space.com. 
+[16] Space.com. 
 SpaceX will launch a moon mission funded by Dogecoin in 2022. 
 https://www.space.com/spacex-dogecoin-moon-mission
 
-[15] Dogecoin Website.
+[17] Dogecoin Website.
 https://dogecoin.com/
 
 
