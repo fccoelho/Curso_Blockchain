@@ -20,7 +20,8 @@ Segundo o website oficial [[6]](https://tether.to/), as principais característi
 1. Estabilidade: Tether converte dinheiro em moeda digital para ancorar o valor em uma moeda nacional.   
 2. Reservas 100% apoiadas: Todo Tether tem o equivalente a 1 dólar reservado. Além da própria moeda, ativos e recebimentos de empréstimos são utilizados.
 3. Transparência: Os valores da reserva são diariamente publicados. Essa é o item mais criticado pela comunidade. 
-4. Tecnologia Blockchain: A plataforma para o Tether é construída em cima da Blockchain do Bitcoin.  
+4. Tecnologia Blockchain: A plataforma para o Tether é construída em cima da
+   Blockchain de outras criptomoedas. Inicialmente era da Bitcoin.  
 5. Integração diversa: É amoeda com o maior número de integrações.
 6. Segura: Tecnologia blockchain mais padrões e regulamentos internacionais. 
 
@@ -121,6 +122,12 @@ polêmicas relacionadas saem com respeito ao Tether a todo momento. Um pequeno
 compilado se encontra na Seção [Críticas e
 controvérsias](#críticas-e-controvérsias). 
 
+Atualmente, Tether também está na blockchain Ethereum como um token ERC20. 
+
+Uma linha do tempo muito bem escrita e detalhada pode ser encontrada [nesse
+website](https://amycastor.com/2019/01/17/the-curious-case-of-tether-a-complete-timeline-of-events/),
+por Amy Castor.
+
 ## Principais características 
 
 As principais características do Tether são elencadas a seguir. Importante
@@ -141,19 +148,72 @@ características, porém ela é a com maior volume nos dias de hoje.
    Chinês), e o XAUT (ouro). 
 4. Tem o objetivo de simplificar operações do setor financeiro
    tradicional com o mercado de criptomoedas. 
-5. Ele é construído sobre o blockchain da bitcoin, isto é, toda a informação
-   das transações do tether estão nos blocos construídos da bitcoin. 
+5. Ele é construído sobre o blockchain de outras criptomoedas, isto é, toda a informação
+   das transações do tether estão nos blocos construídos da bitcoin pu
+   ethereum mais recentemente. A tecnologia, portanto, é tida a partir de
+   outra moeda.
+
+### Privacidade e segurança 
+
+Como acabamos de mencionar e vamos explicar na Seção [Tecnologia e
+processo](#tecnologia-e-processo), a tecnologia do Tether está diretamente
+conectada com a do bitcoin. Por isso, a segurança está atrelada com a
+tecnologia blockchain e criptografia, além das regulamentações governamentais.
+A [empresa Tether Limited alega](https://tether.to/faqs) que a transparência  
+que ela mantém garante a segurança de que o tether vai sempre valer 1 dólar.
+Mas tudo isso está sujeito aos [Termos de Serviço e Política de
+Privacidade](https://tether.to/legal/). Por exemplo, o item 2 afirma que a
+Tether pode suspender ou encerrar os serviços para o usuário quando determinar
+que ele ou ela tenha violado ou agido de forma inconsistente de acordo com
+esses Termos. Alguns pontos dos Termos são discutíveis. Em se tratando de
+privacidade, por exemplo, a empresa pode compartilhar informação com
+terceiros, tal como instituições financeiras ou governos (item 5). Inclusive
+informação pessoal do usuário pode ser fornecida (item 19). Concluímos
+que a **privacidade** e a **anonimidade**  estão sujeitas às linhas de
+um código estabelecido pela empresa, o que pode ser positivo ou negativo para o cliente em questão. 
+
+### Interoperabilidade com outras blockchains
+
+
+A empresa alega ser a criptomoeda com o maior número de integrações, tanto com
+respeito a outras blockchains, quanto com respeito a câmbios. O website oficial tem informação parcial sobre essa questão, justamente
+porque, como é uma moeda que cresce muito em volume, muitas atualizações são
+feitas. Acompanhar o twitter da Tether talvez seja a forma mais sensata de se
+manter atualizado. Cada blockchain de cada criptomoeda pode possuir protocolos
+que as plataformas suportam e operam. No
+[website](https://tether.to/integration-guidelines/), 
+as integrações são 
+
+- Token Protocolo Omni via Blockchain da Bitcoin (essa foi a primeira e mais
+  importante por um longo período); 
+- Token ERC20 via Blockchain Ethereum; 
+- Token TRC20 via Blockchain Tron; 
+- EOSIO.TOKEN via Blockchain EOS; 
+- Liquid Asset via Blockchain Liquid; 
+- Algorand Asset via Blockchain Algorand; 
+- SLP Token via Blockchain Bitcoin Cash.
+
+Cada protocolo tem seu ID específico. Por exemplo, o ID do protocolo Omni é 
+o 31. Os endereços de cada cada Protocolo estão no website linkado logo acima.
+Um exemplo de anúncio no
+[Twitter](https://twitter.com/tether_to/status/1151403693541076992?lang=en). 
+
+
+A stablecoin Tether opera 
+
+### Smart contracts
+
+Após a inte
+
 
 ## Tecnologia e processo 
 
 XXX: Bitcoin blockchain, OMNI layer, função hash
 
-XXX: Falar das atualizações que a moeda teve. Qual o número real de transações
-por segundo. 
-
 XXX: emissão da moeda pela Tether Limited
 
-XXX: Como funciona a anonimidade e privacidade para a moeda
+XXX: Falar das atualizações que a moeda teve. Qual o número real de transações
+por segundo. 
 
 ## Provas de reserva e auditoria 
 
@@ -162,13 +222,7 @@ XXX: como funciona na prática.
 
 ## Falhas de implementação e melhorias futuras
 
-## Outras características 
-
-XXX: interoperabilidade com outras blockchains? 
-XXX: suporte a smart-contracts
-
 ## Críticas e Controvérsias 
-
 
 ## Referências 
 
@@ -193,7 +247,7 @@ em 19 de setembro de 2021.
 
 [8] Popper, Nathaniel. (21 de novembro de 2017). "Warning Signs About Another
 Giant Bitcoin Exchange". The New York Times. Acessado em 19 de setembro de
-2021.  
+1.     
 
 [9] Rooney, Kate. (13 de junho de 2018). "Much of bitcoin’s 2017 boom was
 market manipulation, research says". CNBC. Acessado em 19 de setembro de 2021.
