@@ -1,6 +1,11 @@
 Criptomoeda Tether
 ===================
 
+**Website:** [https://tether.to/](https://tether.to/)
+
+**White paper:** [https://tether.to/wp-content/uploads/2016/06/TetherWhitePaper.pdf](https://tether.to/wp-content/uploads/2016/06/TetherWhitePaper.pdf)
+
+
 Tether (USDT) é uma criptomoeda cujos tokens são emitidos pela empresa [*Tether
 Limited*](https://tether.to/), isto é, diferente de outras criptomoedas como o Bitcoin ou Ethereum,
 existe uma companhia que possui, emite e gerencia o suprimento de Tether
@@ -195,15 +200,19 @@ as integrações são
 Cada protocolo tem seu ID específico. Por exemplo, o ID do protocolo Omni é 
 o 31. Os endereços de cada cada Protocolo estão no website linkado logo acima.
 Um exemplo de anúncio no
-[Twitter](https://twitter.com/tether_to/status/1151403693541076992?lang=en). 
-
-
-A stablecoin Tether opera 
+[Twitter](https://twitter.com/tether_to/status/1151403693541076992?lang=en).
+Em junho de 2021, a Tether operava em nove blockchains [[12]](https://coinsubject.com/tether-continues-serial-blockchain-integrations-avalanche-will-be-next/): [Algorand](https://www.algorand.com/), [Avalanche](https://www.avax.network/)
+(adicionada em maio de 2021), [Standard Ledger Protocolhttps://ethereum.org/en/](https://simpleledger.cash/), [Ethereum](https://ethereum.org/en/), [EOS](https://eos.io/), [Liquid
+Network](https://liquid.net/), [Omni](https://www.omnilayer.org/) (Bitcoin), [Tron](https://tron.network/) e [Solana](https://solana.com/). Além disso, está sendo arrumada a
+integração com [Polkadot](https://polkadot.network/) e
+[Kusama](https://kusama.network/), mas com datas não fixas até setembro de 2021. Em setembro de 2021, o suprimento de
+Tether mais alto é na blockchain Tron. 
 
 ### Smart contracts
 
-Após a inte
-
+Após a integração com o Ethereum em 2019, tether ficou disponível nos smart
+contracts Ethereum. Além disso, Tether também foi lançado na plataforma de
+smart contracts Avalanche ou Tron. 
 
 ## Tecnologia e processo 
 
@@ -256,3 +265,6 @@ Fidelity enters crypto sphere". MarketWatch. Acessado em 19 de setembro de
 
 [11] Financial Times. "Tether and Bitfinex agree to pay $18.5m penalty after New York probe".
 Financial Times. Acessado em 02 de setembro de 2021. 
+
+[12] The Block. (17 de maio de 2021). "Tether continues serial blockchain integrations – Avalanche will be next
+". Coinsubject. Acessado em 19 de setembro de 2021. 
