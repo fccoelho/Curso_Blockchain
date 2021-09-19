@@ -212,7 +212,9 @@ Tether mais alto é na blockchain Tron.
 
 Após a integração com o Ethereum em 2019, tether ficou disponível nos smart
 contracts Ethereum. Além disso, Tether também foi lançado na plataforma de
-smart contracts Avalanche ou Tron. 
+smart contracts Avalanche ou Tron. Isso deixa claro uma das críticas ao
+Tether: se ele não apresenta uma tecnologia nova e não é descentralizado, será
+que é mesmo uma criptomoeda? 
 
 ## Tecnologia e processo 
 
