@@ -1,7 +1,7 @@
 Criptomoeda Tether
 ===================
 
-Tether é uma criptomoeda cujos tokens são emitidos pela empresa [*Tether
+Tether (USDT) é uma criptomoeda cujos tokens são emitidos pela empresa [*Tether
 Limited*](https://tether.to/), isto é, diferente de outras criptomoedas como o Bitcoin ou Ethereum,
 existe uma companhia que possui, emite e gerencia o suprimento de Tether
 [[1]](https://newrepublic.com/article/160905/tether-cryptocurrency-scam-enrich-bitcoin-investors#:~:text=owns%2C%20mints%2C%20and%20manages%20the%20Tether%20supply)
@@ -104,7 +104,8 @@ Ao longo do tempo, o preço do Tether manteve-se estável em aproximadamente 1
 dólar como ele foi construído. Tovaria, isso não foi sempre verdade. Nesse
 [chart](https://finance.yahoo.com/quote/USDT-USD/chart?p=USDT-USD#eyJPSExDIjp0cnVlLCJzdGlja3lDcm9zc2hhaXIiOmZhbHNlLCJ0aGVtZSI6ImxpZ2h0IiwibGF5b3V0Ijp7ImludGVydmFsIjoid2VlayIsInBlcmlvZGljaXR5IjoxLCJ0aW1lVW5pdCI6bnVsbCwiY2FuZGxlV2lkdGgiOjQuNDQ0NDQ0NDQ0NDQ0NDQ1LCJmbGlwcGVkIjpmYWxzZSwidm9sdW1lVW5kZXJsYXkiOnRydWUsImFkaiI6dHJ1ZSwiY3Jvc3NoYWlyIjp0cnVlLCJjaGFydFR5cGUiOiJtb3VudGFpbiIsImV4dGVuZGVkIjpmYWxzZSwibWFya2V0U2Vzc2lvbnMiOnt9LCJhZ2dyZWdhdGlvblR5cGUiOiJvaGxjIiwiY2hhcnRTY2FsZSI6ImxpbmVhciIsInN0dWRpZXMiOnsi4oCMdm9sIHVuZHLigIwiOnsidHlwZSI6InZvbCB1bmRyIiwiaW5wdXRzIjp7ImlkIjoi4oCMdm9sIHVuZHLigIwiLCJkaXNwbGF5Ijoi4oCMdm9sIHVuZHLigIwifSwib3V0cHV0cyI6eyJVcCBWb2x1bWUiOiIjMGRiZDZlZWUiLCJEb3duIFZvbHVtZSI6IiNmZjU1NDdlZSJ9LCJwYW5lbCI6ImNoYXJ0IiwicGFyYW1ldGVycyI6eyJjaGFydE5hbWUiOiJjaGFydCIsImVkaXRNb2RlIjp0cnVlfX19LCJwYW5lbHMiOnsiY2hhcnQiOnsicGVyY2VudCI6MSwiZGlzcGxheSI6IlVTRFQtVVNEIiwiY2hhcnROYW1lIjoiY2hhcnQiLCJpbmRleCI6MCwieUF4aXMiOnsibmFtZSI6ImNoYXJ0IiwicG9zaXRpb24iOm51bGx9LCJ5YXhpc0xIUyI6W10sInlheGlzUkhTIjpbImNoYXJ0Iiwi4oCMdm9sIHVuZHLigIwiXX19LCJzZXRTcGFuIjp7Im11bHRpcGxpZXIiOjUsImJhc2UiOiJ5ZWFyIiwicGVyaW9kaWNpdHkiOnsicGVyaW9kIjoxLCJ0aW1lVW5pdCI6IndlZWsifX0sIm91dGxpZXJzIjpmYWxzZSwibGluZVdpZHRoIjoyLCJjb2xvciI6IiMwMDgxZjIiLCJzdHJpcGVkQmFja2dyb3VuZCI6dHJ1ZSwic3ltYm9scyI6W3sic3ltYm9sIjoiVVNEVC1VU0QiLCJzeW1ib2xPYmplY3QiOnsic3ltYm9sIjoiVVNEVC1VU0QiLCJxdW90ZVR5cGUiOiJDUllQVE9DVVJSRU5DWSIsImV4Y2hhbmdlVGltZXpvbmVOYW1lIjoiRXVyb3BlL0xvbmRvbiJ9LCJwZXJpb2RpY2l0eSI6MSwiaW50ZXJ2YWwiOiJ3ZWVrIiwidGltZVVuaXQiOm51bGwsInNldFNwYW4iOnsibXVsdGlwbGllciI6NSwiYmFzZSI6InllYXIiLCJwZXJpb2RpY2l0eSI6eyJwZXJpb2QiOjEsInRpbWVVbml0Ijoid2VlayJ9fX1dfSwiZXZlbnRzIjp7ImRpdnMiOmZhbHNlLCJzcGxpdHMiOmZhbHNlLCJ0cmFkaW5nSG9yaXpvbiI6Im5vbmUiLCJzaWdEZXZFdmVudHMiOltdfX0-)
 do Yahoo Finance de 5 anos, percebemos que em alguns momentos, seu valor
-diário chegou a fechar de US\$ 0.92 a US\$ 1.04. Em especial, no dia 15 de
+diário chegou a fechar de US\$ 0.92 a US\$ 1.04. A relação do volume com a
+estabilidade também pode ser observada no gráfico. Em especial, no dia 15 de
 outubro de 2018, o seu valor chegou a US\$ 0.88 quando os comerciantes do
 Bitfinex trocaram o tether por bitcoin e elevando o preço do bitcoin
 [[10]](https://www.marketwatch.com/story/bitcoin-jumps-after-credit-scare-2018-10-15).
@@ -118,11 +119,30 @@ bilhão de dólares. A multa foi de 18.5 milhões de dólares
 [[11]](https://www.ft.com/content/1d3b5027-ce7e-470f-8d7a-866746f8079d).  Mais
 polêmicas relacionadas saem com respeito ao Tether a todo momento. Um pequeno
 compilado se encontra na Seção [Críticas e
-controvérsias](#críticas-e-controvérsias).
+controvérsias](#críticas-e-controvérsias). 
 
 ## Principais características 
 
-XXX: O que diferencia das outras blockchains? 
+As principais características do Tether são elencadas a seguir. Importante
+destacar que ela não é necessariamente a única a possuir algumas das seguintes
+características, porém ela é a com maior volume nos dias de hoje. 
+
+1. Estabilidade e indexada ao dólar: ela é uma stablecoin com grande capitalização de
+   mercado e carrega as características citadas anteriormente (veja Seção [Stablecoins](#stablecoins)).
+2. A empresa Tether Limited controla, emite e destrói o Tether. Diferente de
+   outras criptomoedas, não existe uma mineração ou prova de trabalho. Ela é uma
+   criptomoeda centralizada (se é que isso faz sentido, mas isso é mera opinião).
+3. Cada tether tem o equivalente a 1 dólar reservado com a empresa Tether
+   Limited. Assim, ela é responsável por demonstrar que possui as reservas que
+   alega. A transparência alegada é comunicada através da aba
+   [Transparência](https://wallet.tether.to/transparency?__cf_chl_jschl_tk__=pmd_Jm4178HLwUiUxrDnKp9TDJ_ozjVnXeSo2kFblwVYI3k-1632071542-0-gqNtZGzNAeWjcnBszQk9)
+   do website oficial. Atualmente, mais de uma moeda fiduciária ou ativo existe na
+   reserva, isto é, além da USDT, existem o EURT (euro), o CNHT (Yuan Renminbi
+   Chinês), e o XAUT (ouro). 
+4. Tem o objetivo de simplificar operações do setor financeiro
+   tradicional com o mercado de criptomoedas. 
+5. Ele é construído sobre o blockchain da bitcoin, isto é, toda a informação
+   das transações do tether estão nos blocos construídos da bitcoin. 
 
 ## Tecnologia e processo 
 
