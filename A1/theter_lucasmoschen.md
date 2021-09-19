@@ -304,14 +304,24 @@ ou apenas armazenando.
 
 Um usuário pode obter tethers trocando com outro usuário também ou com
 câmbios, como a Bitfinex. Esse diagrama deixa evidente a centralização da
-Tether Limited.  
+Tether Limited. Alguns desses passos são sujeitos a
+[cobranças](https://tether.to/fees/).
 
-### Fees 
+### Transações por segundo 
 
+Uma criptomoeda tem atualizações muito rapidamente e esse tipo de informação 
+tende a ficar atrasada. A última atualização veio com a integração do Tether
+com Solana em março de 2021. No
+[Twitter](https://twitter.com/tether_to/status/1370047810062680065?lang=en), 
+a empresa afirmou que 50 mil transações por segundo poderiam ser realizadas. 
+Cada blockchain tem seu próprio limite, portanto a soma pode ser maior. No
+gráfico, apresentamos as transações por segundo do Tether Bitcoin, Tether
+Ethereum e Tether Tron. 
 
-
-XXX: Falar das atualizações que a moeda teve. Qual o número real de transações
-por segundo. 
+<center>
+<img src="https://github.com/lucasmoschen/lucasmoschen.github.io/blob/master/files/disciplines/tether/tether3.png"
+alt="Fluxo dos fundos da criptomoeda tether" style="width:600px;height:auto;">
+</center>
 
 ## Provas de reserva e auditoria 
 
