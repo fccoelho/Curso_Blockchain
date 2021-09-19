@@ -174,7 +174,6 @@ um código estabelecido pela empresa, o que pode ser positivo ou negativo para o
 
 ### Interoperabilidade com outras blockchains
 
-
 A empresa alega ser a criptomoeda com o maior número de integrações, tanto com
 respeito a outras blockchains, quanto com respeito a câmbios. O website oficial tem informação parcial sobre essa questão, justamente
 porque, como é uma moeda que cresce muito em volume, muitas atualizações são
