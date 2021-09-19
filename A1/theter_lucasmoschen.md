@@ -146,7 +146,7 @@ características, porém ela é a com maior volume nos dias de hoje.
    criptomoeda centralizada (se é que isso faz sentido, mas isso é mera opinião).
 3. Cada tether tem o equivalente a 1 dólar reservado com a empresa Tether
    Limited. Assim, ela é responsável por demonstrar que possui as reservas que
-   alega. A transparência alegada é comunicada através da aba
+   alega, a Prova de Reservas. A transparência alegada é comunicada através da aba
    [Transparência](https://wallet.tether.to/transparency?__cf_chl_jschl_tk__=pmd_Jm4178HLwUiUxrDnKp9TDJ_ozjVnXeSo2kFblwVYI3k-1632071542-0-gqNtZGzNAeWjcnBszQk9)
    do website oficial. Atualmente, mais de uma moeda fiduciária ou ativo existe na
    reserva, isto é, além da USDT, existem o EURT (euro), o CNHT (Yuan Renminbi
@@ -175,7 +175,12 @@ privacidade, por exemplo, a empresa pode compartilhar informação com
 terceiros, tal como instituições financeiras ou governos (item 5). Inclusive
 informação pessoal do usuário pode ser fornecida (item 19). Concluímos
 que a **privacidade** e a **anonimidade**  estão sujeitas às linhas de
-um código estabelecido pela empresa, o que pode ser positivo ou negativo para o cliente em questão. 
+um código estabelecido pela empresa, o que pode ser positivo ou negativo para
+o cliente em questão. 
+
+Além disso, a anonimidade está relacionada a como a blockchain utilizada
+funciona. No caso do protocolo [Omni](#protocolo-omni), ela é pseudo, pois as
+transações aparecem, apesar de não dizer informações pessoais. 
 
 ### Interoperabilidade com outras blockchains
 
@@ -210,7 +215,7 @@ Tether mais alto é na blockchain Tron.
 
 ### Smart contracts
 
-Após a integração com o Ethereum em 2019, tether ficou disponível nos smart
+Na verdade, Tether se utiliza dessa ferramenta de outras criptomoedas. Após a integração com o Ethereum no final de 2017, tether ficou disponível nos smart
 contracts Ethereum. Além disso, Tether também foi lançado na plataforma de
 smart contracts Avalanche ou Tron. Isso deixa claro uma das críticas ao
 Tether: se ele não apresenta uma tecnologia nova e não é descentralizado, será
@@ -218,9 +223,88 @@ que é mesmo uma criptomoeda?
 
 ## Tecnologia e processo 
 
-XXX: Bitcoin blockchain, OMNI layer, função hash
+O objetivo da tecnologia é ter uma criptomoeda digital com a característica de
+ser estável a variações do mercado de criptomoedas. Para isso, cada tether em
+circulação tem em reserva o equivalente a 1 dólar. No início, as reservas
+ficavam na Tether Limited em Hong Kong
+[[13]](https://tether.to/wp-content/uploads/2016/06/TetherWhitePaper.pdf). 
+O processo pode ser separado em três etapas, conforme o diagrama abaixo. 
 
-XXX: emissão da moeda pela Tether Limited
+<center>
+<img src="https://lucasmoschen.github.io/files/disciplines/tether/tether1.png"
+alt="Diagrama tecnologia Tether" style="width:600px;height:auto;">
+</center>
+
+### Blockchain 
+
+Na criação do Tether, somente do Bitcoin era utilizado. As transações que são
+realizadas com o Tether são inseridas no blockchain (da bitcoin, ethereum,
+tron, por exemplo) através de um smart contract (Avalanche, Ethereum), ou
+através de um sistema de consenso (Omni no caso do Bitcoin). 
+
+### Protocolo Omni 
+
+Esse é o protocolo anunciado no Whitepaper. Para verificar outros blockchains,
+consultar as [Integrações](https://tether.to/integration-guidelines/).  A
+tecnologia Omni permite que: 
+
+<ol type="a">
+  <li>Criar/Emitir e destruir tokens digitais como metadados 
+  incluídos no blockchain da Bitcoin.  
+  </li>
+  <li>
+  Rastrear a circulação de tethers via <a src = "https://omniexplorer.info/">https://omniexplorer.info/</a>.
+  No caso do tether, o id é o <a src="https://omniexplorer.info/asset/31">31</a>.
+  </li>
+  <li>
+  Permite que os usuários negociem e armazenem tethers em um ambiente criptograficamente seguro, 
+  pseudo-anônimo, de código aberto com a Omni Wallet, que tem armazenamento cold offline, isto é, sem 
+  conexão com a internet. 
+  </li>
+</ol>
+
+### Tether Limited 
+
+Ela centraliza o controle da moeda Tether, com a responsabilidade de 
+
+- Aceitar depósitos da moeda fiduciária e emitir o correspondente em tether;
+- Enviar as retiradas de dólares e destruir os tethers correspondentes;
+- Armazenar as reservas que correspondem ao tether em circulação. 
+- Publicar a [Prova de Reservas](#provas-de-reserva-e-auditoria) e os
+  resultados de auditoria; 
+- Gerenciar a carteira digital Tether.to
+
+Esse é o ponto fraco da operação, como apontado no Whitepaper, pois muitas
+partes do processo dependem da boa funcionalidade dessa empresa. Atualmente,
+a empresa tem parceria com várias instituições financeiras para reduzir o seu
+risco financeiro. 
+
+### Fluxo dos fundos 
+
+A vida de um tether pode ser dividida em cinco passos, conforme a imagem
+abaixo. 
+
+<center>
+<img src="https://lucasmoschen.github.io/files/disciplines/tether/tether2.png"
+alt="Fluxo dos fundos da criptomoeda tether" style="width:600px;height:auto;">
+</center>
+
+**Passo 1:** Depósito da moeda fiduciária ou ativo na conta do banco Tether
+Limited pelo usuário. 
+
+**Passo 2:** Tether Limited gera os créditos em tether e ele entra em
+circulação. A quantidade emitida é equivalente à quantidade depositada. 
+
+**Passo 3:** Transações com o tether, como, por exemplo, trocando por Bitcoin,
+ou apenas armazenando.
+
+**Passo 4:** O usuário pode trocar tethers para a moeda fiduciária; 
+
+**Passo 5:** Os tethers equivalentes são destruídos. 
+
+Um usuário pode obter tethers trocando com outro usuário também ou com
+câmbios, como a Bitfinex. Esse diagrama deixa evidente a centralização da
+Tether Limited.  
 
 XXX: Falar das atualizações que a moeda teve. Qual o número real de transações
 por segundo. 
@@ -270,3 +354,5 @@ Financial Times. Acessado em 02 de setembro de 2021.
 
 [12] The Block. (17 de maio de 2021). "Tether continues serial blockchain integrations – Avalanche will be next
 ". Coinsubject. Acessado em 19 de setembro de 2021. 
+
+[13] Tether Whitepaper. "Tether: Fiat currencies on the Bitcoin blockchain".  
