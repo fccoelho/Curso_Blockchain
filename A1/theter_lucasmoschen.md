@@ -285,7 +285,7 @@ A vida de um tether pode ser dividida em cinco passos, conforme a imagem
 abaixo. 
 
 <center>
-<img src="https://lucasmoschen.github.io/files/disciplines/tether/tether2.png"
+<img src="https://github.com/lucasmoschen/lucasmoschen.github.io/blob/master/files/disciplines/tether/tether2.png"
 alt="Fluxo dos fundos da criptomoeda tether" style="width:600px;height:auto;">
 </center>
 
@@ -305,6 +305,10 @@ ou apenas armazenando.
 Um usuário pode obter tethers trocando com outro usuário também ou com
 câmbios, como a Bitfinex. Esse diagrama deixa evidente a centralização da
 Tether Limited.  
+
+### Fees 
+
+
 
 XXX: Falar das atualizações que a moeda teve. Qual o número real de transações
 por segundo. 
