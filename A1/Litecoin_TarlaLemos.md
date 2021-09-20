@@ -34,7 +34,7 @@ O criador da Litecoin é o programador Charles Lee.
 
 <img src="https://d179wquxaeob5f.cloudfront.net/wp-content/uploads/2018/08/charlie-lee-litecoin.jpg" style="width: 433px; height: 260.684px; margin: 6.60816px 0px;">
 
-Ela foi lançada em outubro de 2021 com a justificativa de que seria uma alternativa ao Bitcoin. Uma vez que as pessoas passaram a comprar Bitcoin com a intenção de reservar a moeda por um longo prazo, a Litecoin veio com a proposta de ser uma moeda leve para ser usada em transações do dia a dia.
+Ela foi lançada em outubro de 2011 com a justificativa de que seria uma alternativa ao Bitcoin. Uma vez que as pessoas passaram a comprar Bitcoin com a intenção de reservar a moeda por um longo prazo, a Litecoin veio com a proposta de ser uma moeda leve para ser usada em transações do dia a dia.
 
 Tendo em vista o objetivo da moeda, Charles Lee e os contribuidores a apelidaram de "prata" para o "ouro" que era o Bitcoin.
 
@@ -46,7 +46,7 @@ Tendo em vista o objetivo da moeda, Charles Lee e os contribuidores a apelidaram
 
 As principais diferenças entre o Bitcoin e o Litecoin estão no algoritmo usado e no tempo de processamento dos blocos.
 
-Enquanto o Bircoin usa o SHA-256, para o Litecoin foi escolhido o algoritmo Scrypt como proof-of-work, por razões que veremos a seguir.
+Enquanto o Bitcoin usa o SHA-256, para o Litecoin foi escolhido o algoritmo Scrypt como proof-of-work, por razões que veremos a seguir.
 
 Quanto ao tempo de processamento dos blocos, a moeda é 4 vezes mais rápida para confirmar a transação, condizendo com seu objetivo de ser mais leve para transações diárias.
 
