@@ -13,7 +13,7 @@ existe uma companhia que possui, emite e gerencia o suprimento de Tether
 e esse suprimento não está relacionado com prova de trabalho computacional. O
 objetivo principal dela é ser uma [moeda estável](#stablecoins), no sentido
 que seu valor é pouco volátil com respeito a algum ativo do mercado. No
-caso, ela foi desenvolvida para sempre valer US$1,00 (ou muito próximo disso).
+caso, ela foi desenvolvida para sempre valer US\$1,00 (ou muito próximo disso).
 Sua criação data de 2014 com o nome de Realcoin e em setembro de 2021, ela era a
 moeda com maior volume diário (quantidade de moeda negociada em 24 horas) atingindo
 mais de 74 bilhões de tethers, e a quinta com maior valor de mercado, em mais
@@ -52,7 +52,7 @@ As criptomoedas ainda estão crescendo e ainda têm, de forma geral, baixa
 capitalização de mercado, o que leva à alta volatilidade. Uma história que
 ficou famosa foi o caso Bitcoin Pizza Coin, em que Laszlo Hanyecz comprou duas
 pizzas do Papa John's por 10 mil bitcoins em 2010, a primeira compra de um bem
-físico com a moeda. Na época o valor era equivalente a US$ 41
+físico com a moeda. Na época o valor era equivalente a US\$ 41
 [[4]](https://www.news18.com/news/buzz/who-is-infamous-bitcoin-pizza-guy-man-who-blew-365m-haul-says-yet-had-no-regrets-3775664.html).
 
 Nesse contexto nascem as *stablecoins* (moedas estáveis), que são criptomoedas
@@ -334,33 +334,33 @@ tethers ficam na blockchain, a sua contabilidade em qualquer ponto
 no tempo é trivial. Já a quantidade de reservas é publicada diariamente no
 site de transparência da [Tether.to](https://wallet.tether.to/transparency). 
 
-Seja $TUSD_i$ o número de tethers emitidos e $TUSD_r$ o número de tethers
+Seja TUSD_i o número de tethers emitidos e TUSD_r o número de tethers
 destruídos. Assim, o número de tethers em circulação é dado por 
 
-$$
+
 TUSD = TUSD_i - TUSD_r,
-$$
+
 
 que pode ser encontrado em cada blockchain, em especial da [OMNI](https://omniexplorer.info/asset/31). 
 
-Seja $DUSD_d$ a quantidade de (equivalente a) dólares depositados na Tether
-Limited e $DUSD_w$ a quantidade retirada. Então a quantidade da moeda
+Seja DUSD_d a quantidade de (equivalente a) dólares depositados na Tether
+Limited e DUSD_w a quantidade retirada. Então a quantidade da moeda
 fiduciária com a Tether é  
 
-$$
+
 DUSD = DUSD_d - DUSD_w.
-$$
+
 
 Então, é introduzido a Equação de Solvência dada por 
 
-$$
+
 TUSD = DUSD, 
-$$
+
 
 mais uma vez para cada moeda fiduciária e blockchain. Logo, cada tether
 emitido ou destruído deve corresponder a um depósito ou retirada,
-respectivamente. A prova de $TUSD$ é dada pela blockchain, enquanto a prova de
-$DUSD$ tem os seguintes processos: 
+respectivamente. A prova de TUSD é dada pela blockchain, enquanto a prova de
+DUSD tem os seguintes processos: 
 
 - Balança publicada diariamente na página de Transparência. 
 - Auditoria profissional verificadas, assinadas e publicadas. 
@@ -411,7 +411,7 @@ e sites especializados nesse assunto.
 
 - [After An 850 Million Controversy, What Everyone Should Know About Bitfinex, Tether And Stablecoins](https://www.forbes.com/sites/stevenehrlich/2019/05/02/after-an-850-million-controversy-what-everyone-should-know-about-bitfinex-tether-and-stablecoins/):
   Advocacia Geral de Nova Iorque falou que a Bitfinex supostamente usou fundos do Tether
-  para cobrir perdas de US$ 850 milhões.
+  para cobrir perdas de US\$ 850 milhões.
 - [Tether Crypto Controversy: What Twitter Investors Are Saying About the Stablecoin Now](https://investorplace.com/2021/08/tether-crypto-controversy-what-twitter-investors-are-saying-about-the-stablecoin-now/):
   Atualizações sobre as controvérsias.
 
