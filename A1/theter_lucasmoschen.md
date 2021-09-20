@@ -285,7 +285,7 @@ A vida de um tether pode ser dividida em cinco passos, conforme a imagem
 abaixo. 
 
 <center>
-<img src="https://github.com/lucasmoschen/lucasmoschen.github.io/blob/master/files/disciplines/tether/tether2.png"
+<img src="https://lucasmoschen.github.io/files/disciplines/tether/tether2.png"
 alt="Fluxo dos fundos da criptomoeda tether" style="width:600px;height:auto;">
 </center>
 
@@ -316,21 +316,113 @@ com Solana em março de 2021. No
 a empresa afirmou que 50 mil transações por segundo poderiam ser realizadas. 
 Cada blockchain tem seu próprio limite, portanto a soma pode ser maior. No
 gráfico, apresentamos as transações por segundo do Tether Bitcoin, Tether
-Ethereum e Tether Tron. 
+Ethereum e Tether Tron feita no [Coin
+Metrics](https://charts.coinmetrics.io/network-data/). 
 
 <center>
-<img src="https://github.com/lucasmoschen/lucasmoschen.github.io/blob/master/files/disciplines/tether/tether3.png"
-alt="Fluxo dos fundos da criptomoeda tether" style="width:600px;height:auto;">
+<img src="https://lucasmoschen.github.io/files/disciplines/tether/tether3.png"
+alt="Transações por segundo do Tether" style="width:600px;height:auto;">
 </center>
 
 ## Provas de reserva e auditoria 
 
-XXX: descrever como funciona a prova de reservas 
-XXX: como funciona na prática. 
+Esse processo existe para provar a solvência da Tether Limited e garantir que 
+a empresa é capaz de pagar os tethers em circulação, isto é, que o 
+tether vale 1 dólar mesmo. A ideia geral é provar que o número total 
+de reservas é igual ao número de tethers em circulação. Como os 
+tethers ficam na blockchain, a sua contabilidade em qualquer ponto 
+no tempo é trivial. Já a quantidade de reservas é publicada diariamente no
+site de transparência da [Tether.to](https://wallet.tether.to/transparency). 
+
+Seja $TUSD_i$ o número de tethers emitidos e $TUSD_r$ o número de tethers
+destruídos. Assim, o número de tethers em circulação é dado por 
+
+$$
+TUSD = TUSD_i - TUSD_r,
+$$
+
+que pode ser encontrado em cada blockchain, em especial da [OMNI](https://omniexplorer.info/asset/31). 
+
+Seja $DUSD_d$ a quantidade de (equivalente a) dólares depositados na Tether
+Limited e $DUSD_w$ a quantidade retirada. Então a quantidade da moeda
+fiduciária com a Tether é  
+
+$$
+DUSD = DUSD_d - DUSD_w.
+$$
+
+Então, é introduzido a Equação de Solvência dada por 
+
+$$
+TUSD = DUSD, 
+$$
+
+mais uma vez para cada moeda fiduciária e blockchain. Logo, cada tether
+emitido ou destruído deve corresponder a um depósito ou retirada,
+respectivamente. A prova de $TUSD$ é dada pela blockchain, enquanto a prova de
+$DUSD$ tem os seguintes processos: 
+
+- Balança publicada diariamente na página de Transparência. 
+- Auditoria profissional verificadas, assinadas e publicadas. 
+
+### Como funciona na prática 
+
+Em maio de 2021, Tether divulgou a mais recente auditoria independente
+confirmando o valor em reserva [[14]](https://finance.yahoo.com/news/tether-release-consolidated-reserves-report-163000525.html). Na verdade, a empresa de contabilidade
+[Moore](https://www.moore-global.com/) que fez a auditoria, afirmou que havia
+mais do que o necessário de ativos para compensar a quantidade de Tether em
+circulação. Na verdade, esse
+[relatório](https://tether.to/wp-content/uploads/2021/04/tether-assurance-mar-2021-2.pdf)
+veio após uma fase de muitas críticas à transparência da empresa Tether. Uma
+das críticas advém do fato de apenas uma pequena parte do valor guardado é de
+fato dinheiro em dólar. Outros equivalentes de baixo risco (mas não risco
+inexistente) são utilizados, como papel comercial e tesouros do governo.  
 
 ## Falhas de implementação e melhorias futuras
 
+Alguns problemas na implementação foram destacados no Whitepaper. O ponto
+fraco da operação é a centralização da Tether Limited. Em particular, pode
+acontecer o seguinte: 
+
+- Tether Limited pode falir; 
+- O banco deles pode ficar insolvente; 
+- O banco poderia congelar ou confiscar os fundos; 
+- Os fundos poderiam sumir com os donos da empresa. 
+
+Respostas a esses problemas têm suas sugestões de abordagens dadas pelos
+criadores. Uma das seguranças que eles propõem é a confiança de instituições
+financeiras bem estabelecidas como e Banco Cathay United e o Banco Hwatai em
+Taiwan. Para a questão de fugir com o dinheiro, a publicidade dos criadores,
+com seus nomes, localizações e reputações dem mitigar a desconfiança. A ideia
+é também expandir o número de plataformas utilizadas, dentre outros aspectos. 
+
 ## Críticas e Controvérsias 
+
+Tether se envolveu em diversas policas ao longo de sua história. Aqui
+colocamos links para diversos dessas afirmações que são de autoria de jornais
+e sites especializados nesse assunto. 
+
+- [Tether’s Controversies Seem Never Ending. Executives Under Investigation For Bank Fraud
+  ](https://finance.yahoo.com/news/tether-controversies-seem-never-ending-084512532.html):
+  possíveis investigações por fraude bancária pelo Departamento de Justiça dos
+  EUA (27 de julho de 2021). 
+- [The Tether controversy, explained](https://www.theverge.com/22620464/tether-backing-cryptocurrency-stablecoin):
+  Tether é um risco para o ecossistema de criptomoedas;
+
+- [After An 850 Million Controversy, What Everyone Should Know About Bitfinex, Tether And Stablecoins](https://www.forbes.com/sites/stevenehrlich/2019/05/02/after-an-850-million-controversy-what-everyone-should-know-about-bitfinex-tether-and-stablecoins/):
+  Advocacia Geral de Nova Iorque falou que a Bitfinex supostamente usou fundos do Tether
+  para cobrir perdas de US$ 850 milhões.
+- [Tether Crypto Controversy: What Twitter Investors Are Saying About the Stablecoin Now](https://investorplace.com/2021/08/tether-crypto-controversy-what-twitter-investors-are-saying-about-the-stablecoin-now/):
+  Atualizações sobre as controvérsias.
+
+## Conclusão
+
+A criptomoeda Tether é uma moeda estável que mantém o preço de 1 dólar
+mantendo reservas de ativos e dinheiro em sua conta bancária. Apesar da quantidade de polêmicas e controvérsias que tem sido
+envolvido, o Tether, em 2021, é a cripto com maior volume diário e com alta capitalização de mercado, com
+expansão para diferentes blockchains, câmbios e parcerias com instituições
+financeiras.
+
 
 ## Referências 
 
@@ -370,3 +462,7 @@ Financial Times. Acessado em 02 de setembro de 2021.
 ". Coinsubject. Acessado em 19 de setembro de 2021. 
 
 [13] Tether Whitepaper. "Tether: Fiat currencies on the Bitcoin blockchain".  
+
+[14] James, Ryan (01 de  maio de 2021). "Tether Releases Consolidated Reserves
+Report, Backing $50B in Assets". Yahoo!Finance. Acessado em 19 de setembro de
+2021.
