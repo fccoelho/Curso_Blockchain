@@ -203,7 +203,7 @@ as integrações são
 - SLP Token via Blockchain Bitcoin Cash.
 
 Cada protocolo tem seu ID específico. Por exemplo, o ID do protocolo Omni é 
-o 31. Os endereços de cada cada Protocolo estão no website linkado logo acima.
+o 31. Os endereços de cada cada Protocolo estão no website colocado logo acima.
 Um exemplo de anúncio no
 [Twitter](https://twitter.com/tether_to/status/1151403693541076992?lang=en).
 Em junho de 2021, a Tether operava em nove blockchains [[12]](https://coinsubject.com/tether-continues-serial-blockchain-integrations-avalanche-will-be-next/): [Algorand](https://www.algorand.com/), [Avalanche](https://www.avax.network/)
