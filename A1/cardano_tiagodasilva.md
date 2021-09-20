@@ -42,6 +42,7 @@ Nesse contexto, a principal plataforma para participação nesta blockchain é a
 
 Até agosto deste ano (2021), a Cardano não ensejava, ao usuário, a interoperabilidade com outras blockchains; no entanto, este é um de seus objetivos, e ele é explicitamente declarado como o alicerce da era Basho, descrita na introdução. Nesse sentido, o contato com outras blockchains, como a Ethereum, está sendo planejado, no momento da escrita deste texto, pelos desenvolvedores da Cardano [12]. 
 
+## Referências 
 
 [1](https://en.wikipedia.org/wiki/Cardano_(blockchain_platform)) Cardano (blockchain platoform), Wikipedia. Acessado em 20 de setembro de 2021. 
 
