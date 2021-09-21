@@ -1,5 +1,7 @@
 # Cardano (ADA)  
 
+![logo](https://imgur.com/21ccJit) 
+
 ## Histórico 
 
 A Cardano é uma blockchain de terceira geração. Sua história inicia em 2015, quando foram iniciadas as pesquisas e o desenvolvimento de um projeto para a criação de uma criptomoeda escalável e sustentável; dois anos depois, em 2017, ela foi lançada, ensejando a circulação de *ada*, como foi chamada, em homenagem à [Ada Lovelace](https://pt.wikipedia.org/wiki/Ada_Lovelace), sua criptomoeda. Aliás, a Cardano, em oposição a outras blockchains populares, não tem um white paper [1]; o mecanismo de consenso utilizado por ela, baseado em uma prova de participação (*proof-of-stake*) nomeada *Ouroboros* [2], será brevemente descrito nas seções seguintes. 
