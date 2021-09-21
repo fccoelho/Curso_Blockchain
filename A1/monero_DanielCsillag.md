@@ -18,7 +18,7 @@ Monero é uma criptomoeda com um foco em privacidade. Foi lançada em 2014, mas 
 
 Até recentemente, a blockchain do Monero utilizava um algoritmo de Proof of Work chamado _CryptoNightR_. Atualmente, ela utiliza um outro algoritmo de PoW, desenvolvido do zero especialmente para o Monero, chamado _RandomX_.
 
-Um dos principais objetivos do _RandomX_ é resistir a ASICs. A maneira com que optaram em atingir isso foi elaborando um algoritmo que se aproveita fundamentalmente da utilidade genérica de CPUs.
+Um dos principais objetivos do _RandomX_ é resistir a ASICs. A maneira com que optaram em atingir isso foi elaborando um algoritmo que se aproveita fundamentalmente da utilidade geral de CPUs.
 
 Segue o esboço do algoritmo. Por questões de apresentação, simplifiquei um pouco, em particular em relação à manter os estados dos geradores de números aleatórios; para uma especificação totalmente precisa, veja [RandomX/doc/specs.md](https://github.com/tevador/RandomX/blob/master/doc/specs.md#2-algorithm-description):
 
@@ -29,9 +29,9 @@ function RandomX(key, to_hash)
   vm.initialize_dataset(key)
   vm.fill_with_random_bytes(l3_size)
 
-  // Build the blocks:
+  // Build the programs:
   seed = ... // (um valor não estático, que dependende da inicialização da VM)
-  for i in 1..n_blocks
+  for i in 1..n_programs
     // Generate random program:
     program_instructions = fill_with_random_bytes(128 + 8*program_size, seed)
     vm.execute(program_instructions)
@@ -47,9 +47,9 @@ function RandomX(key, to_hash)
 
 Vale destacar algumas coisas nesse algoritmo:
 
-- O bloco `n+1` depende do resultado da execução do bloco `n`;
+- O programa `n+1` depende do resultado da execução do programa `n`;
 - Conseguir prever o que vai acontecer com um programa gerado aleatoriamente, de forma geral, se reduz ao _Halting Problem_;
-- Alguns programas levam mais tempo de executar do que outros. Ao adicionar um novo bloco, há sempre um risco de você gastar tempo demais para pouco adicional;
+- Alguns programas levam mais tempo de executar do que outros. Ao adicionar um novo programa, há sempre um risco de você gastar tempo demais para pouco adicional;
 - A utilização de funções hash impede ataques via geração de programas fáceis de rodar;
 
 ## Privacidade
@@ -80,7 +80,7 @@ Para isso, ela se utiliza de várias tecnologias:
 
 Não há limite na quantidade de Monero. Isto previne que a moeda acabe, e mantém incentivo para mineração.
 
-A emissão da moeda está planejada em duas fases: a fase de emissão principal, que planeja por volta de 18 milhões de moedas ao final de 2022. Após isso, haverá a curva de emissão de cauda, onde a recompensa de um bloco será fixada como 0.6 Monero.
+A emissão da moeda está planejada em duas fases: a fase de emissão principal, que roteia por volta de 18 milhões de moedas ao final de 2022. Após isso, haverá a curva de emissão de cauda, onde a recompensa de um bloco será fixada como 0.6 Monero.
 
 ## Blocos
 
