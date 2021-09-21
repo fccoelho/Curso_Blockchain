@@ -1,6 +1,6 @@
 # Cardano (ADA)  
 
-![logo](https://imgur.com/21ccJit) 
+![alt text](https://media.moneytimes.com.br/uploads/2020/05/cardano-ada-blockchain.jpg) 
 
 ## Histórico 
 
