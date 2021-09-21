@@ -2,7 +2,9 @@
 ## _A primeira moeda digital que você pode minerar no seu telefone_
 
 **Website:** https://minepi.com
+
 **White Paper:** https://minepi.com/white-paper
+
 **[Criadores:](https://minepi.com/team)**
 
 - Dr. Nicolas Kokkalis, PHD em Stanford
@@ -72,7 +74,9 @@ Segundo o próprio site, as principais características de Pi são:
 
 O Mecanismo de consenso de Pi é baseado no Stellar Consensus Protocol (SCP) e no Federated Byzantine Agreement (FBA).
 Visando ordenar uma lista de blocos de transações, esses algoritmos funcionam sem desperdício de energia, mas exigem a troca de muitas mensagens, pois somente após várias rodadas de votação dentro de grupos de confiança da rede de computadores, é possível chegar a um acordo sobre quais transações registrar em um bloco e a ordem desses blocos. Funciona semelhantemente à seguinte forma: "Eu voto no bloco A para ser o próximo bloco. E confirmo que a maioria dos nós em que confio também votou no bloco A", após várias afirmações dessa, é possível concluir que A é o próximo bloco. Mesmo que essas etapas pareçam ser uma quantidade grande, a internet é rápida e as mensagens são leves, portanto esses algoritmos de consenso são mais leves do que outros, como a prova de trabalho da Bitcoin, por exemplo.
+
 Um dos principais representantes desses algoritmos é o Byzantine Fault Tolerance (BFT), porém um dos seus problemas é a determinação centralizada (principalmente pelo criador do sistema) do quorum de votação. Já no FBA, cada nó define suas próprias "fatias de quorum", permitindo que os nós possam ingressar na rede de forma descentralizada: eles declaram os nós de confiança e convencem outros nós a confiar neles, sem necessidade de convencer alguma autoridade central. E o SCP, é uma instanciação do FBA, em que temos os quoruns sendo formados com base nas fatias de quorum de seus membros, e um validador só aceitará novas transações se, e somente se, uma determinada proporção de nós em seus quoruns também aceitarem a transação.
+
 Diferentemente do SCP que possui principalmente empresas e instituições como nós, o algoritmo de consenso de Pi pretende permitir que dispositivos de indíviduos contribuam e sejam recompensados (por exemplo: celulares, notebooks ou computadores). Além disso, Pi divide em quatro as funções que os usuários podem desempenhar:
 
 1. **Pioneiro:** Um usuário do app que só valida sua presença diariamente, confirmando que não é um robô;
@@ -92,7 +96,7 @@ Como o software Pi Node ainda não foi lançado, não é possível saber a funç
 
 ## Funcionamento do App
 
-<img src="https://imgur.com/a/y42RzUj" alt="Criação de uma conta no app Pi Network" style="width:600px;height:auto;">
+**[Imagem 1](https://imgur.com/a/y42RzUj)**
 
 - **Imagem 1:** Para criar uma conta no aplicativo, existem duas opções: login com o Facebook, ou login com o número de telefone. Em seguida, você deve informar seu nome completo, um nick (única informação que os outros usuários terão acesso) e já está criada a conta;
 - **Imagem 2:** É possível encontrar facilmente um menu com várias opções dentro do aplicativo, desde o seu perfil pessoal e círculo de confiança, até o white paper da criptmoeda;
@@ -111,13 +115,13 @@ Como citado no tópico anterior, os demais usuários da rede só têm acesso ao 
 
 ## Regras de Emissão
 
-O fornecimento de criptomoeda por hora é definido pela função: $$T = P + C + E$$, e o significado de cada um desses termos está a seguir:
+O fornecimento de criptomoeda por hora é definido pela função: T = P + C + E, e o significado de cada um desses termos está a seguir:
 
-- P = Recompensa por ser pioneiro, calculada por $$P = \int f(n) dx$$, onde $$f$$ é uma função declinante logaritmicamente e $$n$$ o número de usuário. Atualmente, a taxa básica de mineração diminui pela metade sempre que o número de usuários ativos aumenta em um fator de 10 (por exemplo, indo de 1 milhão para 10 milhões). Essa taxa acabará caindo para $$0$$ quando a rede atingir um certo número de usuários, e a partir desse ponto, os novos mineradores passarão a ser recompensados por meio de taxas de transação e não pela cunhagem de novas moedas. Além disso, é válido ressaltar que pra cada usuário, existe um limite (igual pra todos) de quantidade de Pi pré-cunhada a qual ele terá acesso ao longo da vida de membro;
-- C = Recompensa por conexões de confiança, calculada por $$C=r \cdot P$$, onde $$r$$ é uma taxa de conexões, sendo 20% pra cada conexão. Cada pessoa pode ter até 5 pessoas no seu círculo de confiança.
-- E = Recompensa por embaixador, calculada por $$E=t\cdot(P+C)$$, onde t é uma taxa de ganhos de novos membros, sendo 25% pra cada membro ativo que você ganhou pro aplicativo, e também 25% se o membro que convidou você continua ativo.
+- P = Recompensa por ser pioneiro, calculada por P = integral(f(n) dx), onde f é uma função declinante logaritmicamente e n o número de usuário. Atualmente, a taxa básica de mineração diminui pela metade sempre que o número de usuários ativos aumenta em um fator de 10 (por exemplo, indo de 1 milhão para 10 milhões). Essa taxa acabará caindo para 0 quando a rede atingir um certo número de usuários, e a partir desse ponto, os novos mineradores passarão a ser recompensados por meio de taxas de transação e não pela cunhagem de novas moedas. Além disso, é válido ressaltar que pra cada usuário, existe um limite (igual pra todos) de quantidade de Pi pré-cunhada a qual ele terá acesso ao longo da vida de membro;
+- C = Recompensa por conexões de confiança, calculada por C = r x P, onde r é uma taxa de conexões, sendo 20% pra cada conexão. Cada pessoa pode ter até 5 pessoas no seu círculo de confiança.
+- E = Recompensa por embaixador, calculada por E = t x (P+C), onde t é uma taxa de ganhos de novos membros, sendo 25% pra cada membro ativo que você ganhou pro aplicativo, e também 25% se o membro que convidou você continua ativo.
 
-Um exemplo: Eu entrei na época que a taxa estava $$P=0.1\pi/h$$, tenho uma pessoa no meu círculo de confiança, então $$C=0.2\cdot 0.1=0.02\pi/h$$ e a pessoa que me convidou continua ativa, então $$E=0.25\cdot(0.12)=0.03\pi/h$$. Totalizando em $$T = 1.5\pi/h$$.
+Um exemplo: Eu entrei na época que a taxa estava P = 0.1 pi/h, tenho uma pessoa no meu círculo de confiança, então C = 0.2 x 0.1 = 0.02 pi/h e a pessoa que me convidou continua ativa, então E = 0.25 x (0.12) = 0.03 pi/h. Totalizando em T = 1.5 pi/h.
 
 <a id='9'></a>
 
@@ -130,6 +134,7 @@ A única interoperabilidade atual vem da semelhança existente com o mecanismo d
 ## Outras aplicações
 
 No momento ainda não existem outras aplicações, mas esse é um dos objetivos da equipe fundadora. A comunidade Pi espera que os usuários possam contribuir com isso, de tal forma que o aplicativo móvel também servirá como um ponto de vendas onde os membros de Pi podem oferecer seus produtos e serviços por meio de uma "vitrine virtual" para outros membros da rede, e toda transação de compra e venda será feita utilizando a moeda Pi.
+
 Além disso, também objetiva-se permitir que desenvolvedores de aplicativos possam utilizar a infraestrutura existente de Pi, juntamente com os recursos compartilhados da comunidade e dos usuários, para realizar o seu trabalho sem ter que começar do zero. Tudo isso, com um grau de interoperabilidade entre o aplicativo Pi Network e os outros aplicativos.
 
 <a id='11'></a>
