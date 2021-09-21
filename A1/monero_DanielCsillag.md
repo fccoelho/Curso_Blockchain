@@ -12,7 +12,7 @@ Até recentemente, a blockchain do Monero utilizava um algoritmo de Proof of Wor
 
 Um dos principais objetivos do _RandomX_ é resistir a ASICs. A maneira com que optaram em atingir isso foi elaborando um algoritmo que se aproveita fundamentalmente da utilidade genérica de CPUs.
 
-Segue o esboço do algoritmo. Para questões de apresentação, simplifiquei um pouco, em particular em relação à manter os estados dos geradores de números aleatórios; para uma especificação totalmente precisa, veja ~~TODO ADD LINK to specs.md~~:
+Segue o esboço do algoritmo. Para questões de apresentação, simplifiquei um pouco, em particular em relação à manter os estados dos geradores de números aleatórios; para uma especificação totalmente precisa, veja [RandomX/doc/specs.md](https://github.com/tevador/RandomX/blob/master/doc/specs.md#2-algorithm-description):
 
 ```
 function RandomX(key, to_hash)
@@ -22,11 +22,14 @@ function RandomX(key, to_hash)
   vm.fill_with_random_bytes(l3_size)
 
   // Build the blocks:
-  for i in 1..k
+  seed = ... // (um valor não estático, que dependende da inicialização da VM)
+  for i in 1..n_blocks
     // Generate random program:
-    program_instructions = fill_with_random_bytes(128 + 8*program_size)
+    program_instructions = fill_with_random_bytes(128 + 8*program_size, seed)
     vm.execute(program_instructions)
-    // TODO update seed
+
+    // Update seed
+    seed = hash_512(vm.register_file)
 
   // Finalize:
   fingerprint = hash_aes1r(vm.scratchpad)
@@ -36,7 +39,10 @@ function RandomX(key, to_hash)
 
 Vale destacar algumas coisas nesse algoritmo:
 
-- TODO
+- O bloco `n+1` depende do resultado da execução do bloco `n`;
+- Conseguir prever o que vai acontecer com um programa gerado aleatoriamente, de forma geral, se reduz ao _Halting Problem_;
+- Alguns programas levam mais tempo de executar do que outros. Ao adicionar um novo bloco, há sempre um risco de você gastar tempo demais para pouco adicional;
+- A utilização de funções hash impede ataques via geração de programas fáceis de rodar;
 
 ## Privacidade
 
