@@ -96,7 +96,7 @@ Como o software Pi Node ainda não foi lançado, não é possível saber a funç
 
 ## Funcionamento do App
 
-**[Imagem 1](https://imgur.com/a/y42RzUj)**
+**![Imagem 1](https://imgur.com/a/y42RzUj)**
 
 - **Imagem 1:** Para criar uma conta no aplicativo, existem duas opções: login com o Facebook, ou login com o número de telefone. Em seguida, você deve informar seu nome completo, um nick (única informação que os outros usuários terão acesso) e já está criada a conta;
 - **Imagem 2:** É possível encontrar facilmente um menu com várias opções dentro do aplicativo, desde o seu perfil pessoal e círculo de confiança, até o white paper da criptmoeda;
