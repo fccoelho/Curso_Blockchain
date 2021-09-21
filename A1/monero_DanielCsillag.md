@@ -2,9 +2,17 @@
 
 Monero é uma criptomoeda com um foco em privacidade. Foi lançada em 2014, mas desde então já passou por mudanças relativamente fundamentais, sempre com o objetivo de melhor atingir seus objetivos:
 
-- **Segurança** -- Não há espaço para operações na blockchain do Monero serem falsificadas;
-- **Privacidade** -- Diferente da vasta maioria de criptomoedas, a blockchain do Monero não é transparente: é obfuscada de tal maneira que é verificável mas não identificável;
-- **Decentralização** -- Na maioria das criptomoedas mineráveis, tem-se uma vantagem absurda em adquirir hardwares especializados e de mais difícil acesso. Monero usa um algoritmo de Proof of Work que previne tais hardwares, tendo melhor performance em CPU mesmo; e assim, aumenta a decentralização da rede;
+- **Segurança**
+
+  Não há espaço para operações na blockchain do Monero serem falsificadas;
+
+- **Privacidade**
+
+  Diferente da vasta maioria de criptomoedas, a blockchain do Monero não é transparente: é obfuscada de tal maneira que é verificável mas não identificável;
+
+- **Decentralização**
+
+  Na maioria das criptomoedas mineráveis, tem-se uma vantagem absurda em adquirir hardwares especializados e de mais difícil acesso. Monero usa um algoritmo de Proof of Work que previne tais hardwares, tendo melhor performance em CPU mesmo; e assim, aumenta a decentralização da rede;
 
 ## Proof of Work
 
@@ -60,11 +68,11 @@ Para isso, ela se utiliza de várias tecnologias:
 
 - Integração com tecnologias focadas em privacidade
 
-  - Tor e I2P
+  - _Tor_ e _I2P_
 
     Ambos se tratam de protocolos para anonimização de requests, e ambos podem ser facilmente utilizados para realizar transações com Monero.
 
-  - Dandelion++
+  - _Dandelion++_
 
     Se trata de um protocolo para anonimização em criptomoedas, de uma forma bem geral. É compatível com Monero.
 
