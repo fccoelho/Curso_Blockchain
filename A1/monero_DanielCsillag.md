@@ -78,7 +78,15 @@ Para isso, ela se utiliza de várias tecnologias:
 
 ## Emissão da Criptomoeda
 
-<!-- Descever regras para emissão da criptomoeda e se é inflacionária ou não. -->
+Não há limite na quantidade de Monero. Isto previne que a moeda acabe, e mantém incentivo para mineração.
+
+A emissão da moeda está planejada em duas fases: a fase de emissão principal, que planeja por volta de 18 milhões de moedas ao final de 2022. Após isso, haverá a curva de emissão de cauda, onde a recompensa de um bloco será fixada como 0.6 Monero.
+
+## Blocos
+
+A blockchain do Monero equilibra um parâmetro de dificuldade no processo de mineração (o número de programas no RandomX) de forma que um novo bloco é adicionado à blockchain a cada 2 minutos, em média (o que pode ser, de fato, confirmado observando https://blockchair.com/monero/).
+
+Não há tamanho máximo de bloco, mas há desincentivos para blocos muito grandes, de uma forma dinâmica, de forma a providenciar uma boa escalabilidade da moeda.
 
 ## Interoperabilidade com Bitcoin
 
