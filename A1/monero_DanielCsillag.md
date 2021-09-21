@@ -40,7 +40,27 @@ Vale destacar algumas coisas nesse algoritmo:
 
 ## Privacidade
 
-<!-- Mencionar mecanismos de privacidade -->
+Como mencionado acima, a blockchain do Monero foi elaborada com o intuito de manter a privacidade o máximo possível.
+
+Para isso, ela se utiliza de várias tecnologias:
+
+- _RingCT_
+
+  Uma variação de ring signatures. É utilizada para ocultar, em uma transação, a quantidade transacionada, origem e destino.
+
+- _Stealth Addresses_
+
+  Na blockchain do Monero, cada carteira tem seu endereço correspondente. Ao usar este endereço para um pagamento, você está essencialmente se identificando (por mais que esta identificação seja relativamente separada da sua identidade pessoal); o conceito de stealth addresses é você poder gerar um outro endereço na blockchain que se refere a você, mas que não pode ser traçado ao endereço principal.
+
+- Integração com tecnologias focadas em privacidade
+
+  - Tor e I2P
+
+    Ambos se tratam de protocolos para anonimização de requests, e ambos podem ser facilmente utilizados para realizar transações com Monero.
+
+  - Dandelion++
+
+    Se trata de um protocolo para anonimização em criptomoedas, de uma forma bem geral. É compatível com Monero.
 
 ## Emissão da Criptomoeda
 
