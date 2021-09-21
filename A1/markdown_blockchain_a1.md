@@ -3,12 +3,12 @@
 ## Relatório A1 da disciplina de blockchain - Victor Bombarda
 
 
-1. [Histórico da blockchain](1)
-2. [Características da blockchain](2)
-3. [Mecanismo de consenso](3)
-4. [Emissão da criptomoeda](5)
-5. [Interoperabilidade](6)
-6. [Referências](4)
+1. [Histórico da blockchain](#1)
+2. [Características da blockchain](#2)
+3. [Mecanismo de consenso](#3)
+4. [Emissão da criptomoeda](#5)
+5. [Interoperabilidade](#6)
+6. [Referências](#4)
 
 
 <a id="1"></a>
