@@ -20,7 +20,7 @@ Até recentemente, a blockchain do Monero utilizava um algoritmo de Proof of Wor
 
 Um dos principais objetivos do _RandomX_ é resistir a ASICs. A maneira com que optaram em atingir isso foi elaborando um algoritmo que se aproveita fundamentalmente da utilidade genérica de CPUs.
 
-Segue o esboço do algoritmo. Para questões de apresentação, simplifiquei um pouco, em particular em relação à manter os estados dos geradores de números aleatórios; para uma especificação totalmente precisa, veja [RandomX/doc/specs.md](https://github.com/tevador/RandomX/blob/master/doc/specs.md#2-algorithm-description):
+Segue o esboço do algoritmo. Por questões de apresentação, simplifiquei um pouco, em particular em relação à manter os estados dos geradores de números aleatórios; para uma especificação totalmente precisa, veja [RandomX/doc/specs.md](https://github.com/tevador/RandomX/blob/master/doc/specs.md#2-algorithm-description):
 
 ```
 function RandomX(key, to_hash)
