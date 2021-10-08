@@ -34,6 +34,7 @@ Para isso precisamos criar, no diretório de dados da nossa rede privada um arqu
     "config": {
         "chainId": 15,
         "homesteadBlock": 0,
+        "eip150Block": 0,
         "eip155Block": 0,
         "eip158Block": 0
     },
