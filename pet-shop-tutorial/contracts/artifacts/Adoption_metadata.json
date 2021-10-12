@@ -1,0 +1,89 @@
+{
+	"compiler": {
+		"version": "0.5.0+commit.1d4f565a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "getAdopters",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address[16]"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "adopters",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "petId",
+						"type": "uint256"
+					}
+				],
+				"name": "adopt",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Adoption.sol": "Adoption"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Adoption.sol": {
+			"keccak256": "0x4e694d67b59de6697b6d9d37898a1553864d6b799cbe17f6a6f9a361cedcf985",
+			"urls": [
+				"bzzr://ec5bfc69fd5427a25d42f0d4b9c4ab0e9e089076c35eeaa6a56cb86a24838a67"
+			]
+		}
+	},
+	"version": 1
+}
