@@ -1,6 +1,6 @@
 # Preparando-se para desenvolver em Ethereum
 
-Neste documento vamos aprender a como configurar um ambente de 
+Neste documento vamos aprender a como configurar um ambiente de 
 desenvolvimento para *Smart Contracts*.
 
 Para isso é necessário instalar tanto o cliente Geth quando a IDE Remix.
