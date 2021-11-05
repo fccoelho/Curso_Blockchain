@@ -6,7 +6,7 @@ Leia o artigo para entender o conceito proposto.
 
 Sugestão de Fluxograma:
 
-![Fluxograma](A2/Fluxograma.png)
+![Fluxograma](Fluxograma.png)
 
 ## Requisitos essenciais
 O projeto envolverá o desenvolvimento de smart-contracts conforme explicitado neste documento. O projeto deve ser gerenciado por uma das duas framework de desenvolvimento de smart-contracts: [Truffle](https://www.trufflesuite.com/docs/truffle/getting-started/creating-a-project) ou [Brownie](https://eth-brownie.readthedocs.io/en/latest/index.html), à escolha do aluno.
