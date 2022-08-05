@@ -2,10 +2,10 @@
 
 Anyone using this course should use these lectures in the following order:
 
-1. [Intro_crypto](intro_cripto.ipynb)
+1. [Intro crypto](intro_cripto.ipynb)
 1. [Lecture 1 - bitcoin-client](Lecture 1 - bitcoin-client.md)
-1. [Ethereum_Merkle](Ethereum_merkle.ipynb)
-1. [Lecture 2 - Ethereum dev](Lecture 2 - ethereum-dev)
+1. [Ethereum Merkle tree](Ethereum_merkle.ipynb)
+1. [Lecture 2 - Ethereum dev](Lecture 2 - ethereum_dev.md)
 1. [Minimal Blockchain](Minimal%20Blockchain.ipynb)
 1. [Ethereum development with geth and Mist](Lecture 2 - ethereum_dev.md)
 1. [Introduction to Solidity](Intro_to_Solidity.md)
