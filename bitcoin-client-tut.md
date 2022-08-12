@@ -26,9 +26,8 @@ me about any mistakes or possibilities of improvement!
 	if you are using ubuntu, you can also install from a PPA (this is
    not recommended if you are going to use the real Bitcoin network):
 
-        sudo add-apt-repository ppa:bitcoin/bitcoin
-        sudo apt-get update
-		sudo apt install bitcoind
+        sudo snap install bitcoin-core
+        
 
 2. Create a `bitcoin.conf` file in the application directory:
 
