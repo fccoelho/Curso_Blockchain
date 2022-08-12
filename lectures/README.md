@@ -3,6 +3,7 @@
 Anyone using this course should use these lectures in the following order:
 
 1. [Intro crypto](intro_cripto.ipynb)
+1. [Proof of Work in Python](https://github.com/bstnbuck/Proof-of-Work/blob/master/python/pow.py)
 1. [Lecture 1 - bitcoin-client](Lecture%201%20-%20bitcoin-client.md)
 1. [Ethereum Merkle tree](Ethereum_merkle.ipynb)
 1. [Minimal Blockchain](Minimal%20Blockchain.ipynb)
