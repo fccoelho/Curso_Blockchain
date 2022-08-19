@@ -5,3 +5,5 @@ bitcoin
 pycryptodome
 web3
 ed25519
+jupyter
+eth-brownie
